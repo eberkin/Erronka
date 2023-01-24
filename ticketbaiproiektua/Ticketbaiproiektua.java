@@ -109,5 +109,5 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     // TODO code application logic here
 }
 
-
+//mario
 }
