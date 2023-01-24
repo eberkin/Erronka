@@ -109,7 +109,6 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
-ddd
     
 }
 
