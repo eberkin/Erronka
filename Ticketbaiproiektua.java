@@ -58,7 +58,7 @@ return etiketaZerrenda;
      */
 public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     ArrayList<String>datuakGorde = new ArrayList<String>();
-    Pegatina
+    Pegatina pg;
     try {
         //DOKUMENTUA IRAKURRI
          File dokumentua = new File(pathFitxategia);
@@ -70,6 +70,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
          while ((lerroa = br.readLine()) != null) {
              
              datuakGorde.add(lerroa);
+             pg = SortuPegatina(lerroa);
          } 
 
      } catch (Exception e) {
@@ -80,6 +81,30 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
 
      return datuakGorde;
+ }
+
+
+ //pegatina funtzioa sortzen dugu izena lortzeko info substringa sortzen digu
+ //izena bakarrik ateratzeko $arte irakurtzeko esaten diogu indexOf ekin
+ //hau eta gero esaten diogusub string en bitartze  info hasiko dela $ aurrera
+ private static Pegatina SortuPegatina(String info)
+ {
+    String izena = info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String saltzaileID = info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String prezioaKiloko =info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String pisua= info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String prezioTotala=info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+
  }
  public static void main(String[] args) {
 
