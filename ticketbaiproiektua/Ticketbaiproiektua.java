@@ -107,6 +107,8 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
     KarpetaGuztialIrakurri ();
     // TODO code application logic here
+
+    //Marioren aldaketak
 }
 
 
