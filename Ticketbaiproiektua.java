@@ -106,13 +106,15 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
 
  } 
+
+ //Hemen beste proba bat....
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
 
 
 //eberren aldaketa
-//Mario Aldaketa    
+    
 }
 
 
