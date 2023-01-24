@@ -110,7 +110,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
     KarpetaGuztialIrakurri ();
 
-    
+    //kaixo
 }
 
 
