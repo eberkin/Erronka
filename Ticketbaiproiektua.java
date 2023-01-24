@@ -110,7 +110,6 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
     KarpetaGuztialIrakurri ();
 
-    Hemen ezer agertzen???
     
 }
 
