@@ -112,7 +112,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
 
 //eberren aldaketa
-//Mario    
+//Mario Aldaketa    
 }
 
 
