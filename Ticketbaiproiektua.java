@@ -105,12 +105,12 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     info = info.substring(info.indexOf("$"));
 
 
- }
+ } 
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
-
-    //kaixo
+ddd
+    
 }
 
 
