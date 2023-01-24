@@ -113,7 +113,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     KarpetaGuztialIrakurri ();
 
 
-//eberren aldaketa
+
     
 }
 
