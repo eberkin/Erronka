@@ -81,6 +81,28 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
      return datuakGorde;
  }
+ //pegatina funtzioa sortzen dugu izena lortzeko info substringa sortzen digu
+ //izena bakarrik ateratzeko $arte irakurtzeko esaten diogu indexOf ekin
+ //hau eta gero esaten diogusub string en bitartze  info hasiko dela $ aurrera
+ private static Pegatina SortuPegatina(String info)
+ {
+    String izena = info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String saltzaileID = info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String prezioaKiloko =info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String pisua= info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+    String prezioTotala=info.substring(0, info.indexOf("$"));
+    info = info.substring(info.indexOf("$"));
+
+
+ } 
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
