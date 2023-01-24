@@ -109,7 +109,9 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
-    // TODO code application logic here
+
+    Hemen ezer agertzen???
+    
 }
 
 
