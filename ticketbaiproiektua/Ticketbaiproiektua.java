@@ -17,7 +17,7 @@ public class Ticketbaiproiektua {
 
 
 public static ArrayList <String> KarpetaGuztialIrakurri(){
-    String pathHarategia = "C:\\USERS\\34665\\Desktop\\erronk.txt";
+    String pathHarategia = "eberkin/Erronka/Tiketak";
     String pathOkindegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
     String pathFrutategia= "C:\\USERS\\34665\\Desktop\\erronk.txt";
     String pathTxarkutegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
