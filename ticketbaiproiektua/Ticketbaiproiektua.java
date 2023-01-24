@@ -101,7 +101,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     String prezioTotala=info.substring(0, info.indexOf("$"));
     info = info.substring(info.indexOf("$"));
 
-
+  //Eberren aldaketa
  } 
  public static void main(String[] args) {
 
