@@ -58,7 +58,7 @@ return etiketaZerrenda;
      */
 public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     ArrayList<String>datuakGorde = new ArrayList<String>();
-    Pegatina
+    Pegatina pg = new Pegatina()
     try {
         //DOKUMENTUA IRAKURRI
          File dokumentua = new File(pathFitxategia);
