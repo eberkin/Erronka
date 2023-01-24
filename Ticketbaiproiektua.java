@@ -109,13 +109,10 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
  public static void main(String[] args) {
 
     KarpetaGuztialIrakurri ();
-<<<<<<< HEAD
 
 
 //eberren aldaketa
-=======
->>>>>>> 5e33bf3080b15730e710e95fd79cb900d46740e9
-    
+//Mario    
 }
 
 
