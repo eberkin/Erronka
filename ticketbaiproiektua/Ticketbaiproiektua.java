@@ -17,10 +17,10 @@ public class Ticketbaiproiektua {
 
 
 public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
-    String pathHarategia = "eberkin/Erronka/Tiketak";
-    String pathOkindegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
-    String pathFrutategia= "C:\\USERS\\34665\\Desktop\\erronk.txt";
-    String pathTxarkutegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
+    String pathHarategia = "eberkin\Erronka\harategia\Tiketak";
+    String pathOkindegia =  "eberkin\Erronka\okindegia\Tiketak";
+    String pathFrutategia= "eberkin\Erronka\frutategia\Tiketak";
+    String pathTxarkutegia =  "eberkin\Erronka\txarkuteria\Tiketak";
 
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
