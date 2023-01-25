@@ -94,7 +94,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
  //pegatina funtzioa sortzen dugu izena lortzeko info substringa sortzen digu
  //izena bakarrik ateratzeko $arte irakurtzeko esaten diogu indexOf ekin
  //hau eta gero esaten diogusub string en bitartze  info hasiko dela $ aurrera
- private static Pegatina SortuPegatina(String info)
+ private static Pegatina SortuPegatina(String info, String fitxategiIzena)
  {
     String izena = info.substring(0, info.indexOf("$"));
     info = info.substring(info.indexOf("$"));
@@ -113,7 +113,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
 
   //gaur goizean gabiltza con el puto github
 
-  Pegatina pgtn = new Pegatina();
+  Pegatina pgtn = new Pegatina(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea);
   pgtn.;
   return pgtn;
  } 
