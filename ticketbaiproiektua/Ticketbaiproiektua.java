@@ -40,8 +40,8 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
 }    
 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
- ArrayList <String> etiketaZerrenda = new ArrayList<>();
- ArrayList <String> etiketaZerrendaTmp = new ArrayList<>();
+ ArrayList <Pegatina> etiketaZerrenda = new ArrayList<>();
+ ArrayList <Pegatina> etiketaZerrendaTmp = new ArrayList<>();
     //String sKarpeta= PathName("C:/USERS/34665/Desktop/ERRONKA2");
   File karpeta = new File(pathKarpeta);
   String[]fitxategiZerrenda = karpeta.list();
@@ -66,7 +66,7 @@ return etiketaZerrenda;
     /**
      * @param args the command line arguments
      */
-public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
+public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     ArrayList<String>datuakGorde = new ArrayList<String>();
     Pegatina pg = new Pegatina();
     try {
