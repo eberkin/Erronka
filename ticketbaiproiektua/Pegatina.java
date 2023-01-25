@@ -1,3 +1,8 @@
+package ticketbaiproiektua;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class Pegatina {
     
     private Integer id_ticketa;
