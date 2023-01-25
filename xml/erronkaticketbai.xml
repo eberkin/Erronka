@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ticketak>
+	<ticketa>
+		<id_ticketa>001</id_ticketa>
+		<data>2022-11-12</data>
+		<ordua>13:05:59</ordua>
+		<id_langilea>005</id_langilea>
+		<id_denda>004</id_denda>
+		<izena>harategia</izena>
+		<pisua>5.00</pisua>
+		<prezioa_kiloko>1.00</prezioa_kiloko>		
+		<prezio_totala>5.34</prezio_totala>
+	</ticketa>
+</ticketak>	

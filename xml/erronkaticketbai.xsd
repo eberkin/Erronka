@@ -1,0 +1,61 @@
+<?xml version ="1.0" encoding= "UTF-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+		<xs:element name="ticketak">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="ticketa">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="id_ticketa" type="xs:integer"/>
+								<xs:element name="data" type="xs:date"/>
+								<xs:element name="ordua" type="xs:time"/>
+								<xs:element name="id_langilea" type="xs:integer"/>
+								<xs:element name="id_denda" type="xs:integer"/>
+								<xs:element name="izena">
+									<xs:simpleType>	
+										<xs:restriction base= "xs:string">
+											<xs:maxLength value="100"/>
+										</xs:restriction>	
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="pisua">
+									<xs:simpleType>
+											<xs:restriction base= "xs:decimal">
+												<xs:minInclusive value = "0"/>
+												<xs:maxExclusive value = "100"/>
+												<xs:fractionDigits value = "2"/>
+											</xs:restriction>
+									</xs:simpleType>	
+								</xs:element>		
+								<xs:element name="prezioa_kiloko">
+									<xs:simpleType>	
+											<xs:restriction base= "xs:decimal">
+												<xs:minInclusive value = "0"/>
+												<xs:fractionDigits value = "2"/>
+											</xs:restriction>
+									</xs:simpleType>	
+								</xs:element>			
+								<xs:element name="prezio_totala">
+									<xs:simpleType>
+										<xs:restriction base= "xs:decimal">
+											<xs:minInclusive value = "0"/>
+											<xs:fractionDigits value = "2"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>			
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>	
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+</xs:schema>		
+
+
+
+
+		
+
+
+
+
