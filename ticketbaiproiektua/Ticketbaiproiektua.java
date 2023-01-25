@@ -20,7 +20,7 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     String pathHarategia = "eberkin\Erronka\harategia\Tiketak";
     String pathOkindegia =  "eberkin\Erronka\okindegia\Tiketak";
     String pathFrutategia= "eberkin\Erronka\frutategia\Tiketak";
-    String pathTxarkutegia =  "eberkin\Erronka\txarkuteria\Tiketak";
+    String pathTxarkutegia =  "eberkin\Erronka\txarkutegia\Tiketak";
 
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
