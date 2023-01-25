@@ -34,7 +34,7 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     salmentaGuztiak.addAll(okindegikoPegatinak);
     salmentaGuztiak.addAll(frutategikoPegatinak);
     salmentaGuztiak.addAll(txarkutegikoPegatinak);
-    //kaixo marioren komentarioa
+    //kaixo marioren komentarioa kaixo marionaiz elgoibarkoa
 
     return salmentaGuztiak;
 }    
