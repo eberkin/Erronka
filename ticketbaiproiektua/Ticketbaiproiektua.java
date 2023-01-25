@@ -16,17 +16,26 @@ import java.util.jar.Attributes.Name;
 public class Ticketbaiproiektua {
 
 
-public static ArrayList <String> KarpetaGuztialIrakurri(){
+public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     String pathHarategia = "eberkin/Erronka/Tiketak";
     String pathOkindegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
     String pathFrutategia= "C:\\USERS\\34665\\Desktop\\erronk.txt";
     String pathTxarkutegia =  "C:\\USERS\\34665\\Desktop\\erronk.txt";
 
+    ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
-    KarpetaIrakurri(pathHarategia);
-    KarpetaIrakurri(pathOkindegia);
-    KarpetaIrakurri(pathFrutategia);
-    KarpetaIrakurri(pathTxarkutegia);
+
+    ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia);
+    ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia);
+    ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia);
+    ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia);
+
+    salmentaGuztiak.addAll(harategikoPegatinak);
+    salmentaGuztiak.addAll(okindegikoPegatinak);
+    salmentaGuztiak.addAll(frutategikoPegatinak);
+    salmentaGuztiak.addAll(harkategikoPegatinak);
+
+    return salmentaGuztiak;
 }    
 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
@@ -102,10 +111,14 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     info = info.substring(info.indexOf("$"));
 
   //gaur goizean gabiltza con el puto github
+
+  Pegatina pgtn = new Pegatina();
+  pgtn.;
+  return pgtn;
  } 
  public static void main(String[] args) {
 
-    KarpetaGuztialIrakurri ();
+    ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
     // TODO code application logic here
 
     
