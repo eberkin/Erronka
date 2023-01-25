@@ -33,7 +33,7 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     salmentaGuztiak.addAll(harategikoPegatinak);
     salmentaGuztiak.addAll(okindegikoPegatinak);
     salmentaGuztiak.addAll(frutategikoPegatinak);
-    salmentaGuztiak.addAll(harkategikoPegatinak);
+    salmentaGuztiak.addAll(txarkutegikoPegatinak);
 
     return salmentaGuztiak;
 }    
