@@ -1,10 +1,8 @@
 package ticketbaiproiektua;
-import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 import javax.xml.bind.annotation.*;
-import javax.xml.crypto.Data;
 
 @XmlRootElement (name="ticketa")//aita elementua ticketa izango da
 @XmlType(propOrder ={"izena","date","ordua","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
@@ -23,10 +21,10 @@ public class ticketa {
     private Integer id_denda;
     private Integer id_langilea;
 
-    public etiketazerrenda(){
+    public void etiketazerrenda(){
 
     }
-    public etiketazerrenda(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
+    public void etiketazerrenda(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
         this.id_ticketa =id_ticketa;
         this.izena= izena;
         this.date = date;
