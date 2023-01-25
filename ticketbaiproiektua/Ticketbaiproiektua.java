@@ -112,6 +112,7 @@ public static  ArrayList<String> FitxategiaIrakurri(String pathFitxategia){
     info = info.substring(info.indexOf("$"));
 
   //gaur goizean gabiltza con el puto github
+  //enekoren ordenagailua orain Mario2 da
 
   Pegatina pgtn = new Pegatina(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea);
   pgtn.;
