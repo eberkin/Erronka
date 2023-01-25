@@ -67,7 +67,7 @@ return etiketaZerrenda;
      * @param args the command line arguments
      */
 public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
-    ArrayList<String>datuakGorde = new ArrayList<String>();
+    ArrayList<Pegatina>datuakGorde = new ArrayList<Pegatina>();
     Pegatina pg = new Pegatina();
     try {
         //DOKUMENTUA IRAKURRI
