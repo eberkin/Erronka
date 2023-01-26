@@ -18,29 +18,39 @@ public class Ticketbaiproiektua {
 
 
 public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
+    // Path bakoitza sortzeko
     String pathHarategia = "eberkin\\Erronka\\harategia\\Tiketak";
     String pathOkindegia =  "eberkin\\Erronka\\okindegia\\Tiketak";
     String pathFrutategia= "eberkin\\Erronka\\frutategia\\Tiketak";
     String pathTxarkutegia =  "eberkin\\Erronka\\txarkutegia\\Tiketak";
-
+    // salmentaGuztiak ArrayList-a sortzeko
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
-
+    // hainbat karpetatako pegatinak irakurtzen dituen metodo bat deitu
     ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia);
     ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia);
     ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia);
     ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia);
 
+    // hainbat karpetatako pegatinak salmentaGuztiak ArrayList-era gehitu
     salmentaGuztiak.addAll(harategikoPegatinak);
     salmentaGuztiak.addAll(okindegikoPegatinak);
     salmentaGuztiak.addAll(frutategikoPegatinak);
     salmentaGuztiak.addAll(txarkutegikoPegatinak);
-    
 
+    // salmentaGuztiak ArrayList-a itzultzen da
     return salmentaGuztiak;
 }    
 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
+/*
+KarpetaIrakurri metodoa:
+- Metodo honek, pasatutako path-a izan ezkero fitxategi zerrenda bat irakurtzen du,
+eta bakoitza irakurtzeko FitxategiaIrakurri metodoari deitzen dio.
+-Irakurritako fitxategi guztien etiketak ArrayList batean biltzen ditu.
+- @param pathKarpeta - Fitxategiak dituen karpetaren path-a.
+- @return etiketaZerrenda - Fitxategi guztien etiketak biltzen dituen ArrayList.
+*/
  ArrayList <Pegatina> etiketaZerrenda = new ArrayList<>();
  ArrayList <Pegatina> etiketaZerrendaTmp = new ArrayList<>();
     //String sKarpeta= PathName("C:/USERS/34665/Desktop/ERRONKA2");
