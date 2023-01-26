@@ -78,30 +78,30 @@ return etiketaZerrenda;
      * @param args the command line arguments
      */
 public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
-    ArrayList<Pegatina>datuakGorde = new ArrayList<Pegatina>();
-    Pegatina pg = new Pegatina();
-    try {
-        //DOKUMENTUA IRAKURRI
-         File dokumentua = new File(pathFitxategia);
-         FileReader fr = new FileReader(dokumentua);
-         BufferedReader br = new BufferedReader(fr);
+  ArrayList<Pegatina> datuakGorde = new ArrayList<Pegatina>();
+  try {
+      //DOKUMENTUA IRAKURRI
+      File dokumentua = new File(pathFitxategia);
+      FileReader fr = new FileReader(dokumentua);
+      BufferedReader br = new BufferedReader(fr);
 
-         String lerroa;
+      String lerroa;
 
-         while ((lerroa = br.readLine()) != null) {
-             
-             datuakGorde.add(lerroa);
-         } 
+      while ((lerroa = br.readLine()) != null) {
+          // Objetu berria sortu
+          Pegatina pg = new Pegatina();
+          pg.setEtiketa(lerroa);
+          // Objetua listan sartu
+          datuakGorde.add(pg);
+      } 
 
-     } catch (Exception e) {
-        
-         System.out.println("Ezin izan da dokumentua topatu" + e);
+  } catch (Exception e) {
+      System.out.println("Ezin izan da dokumentua topatu" + e);
+  }
 
-     }
-
-
-     return datuakGorde;
- }
+  return datuakGorde;
+}
+  
  
  //pegatina funtzioa sortzen dugu izena lortzeko info substringa sortzen digu
  //izena bakarrik ateratzeko $arte irakurtzeko esaten diogu indexOf ekin
