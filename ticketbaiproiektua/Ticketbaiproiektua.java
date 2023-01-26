@@ -102,6 +102,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 
      return datuakGorde;
  }
+ 
  //pegatina funtzioa sortzen dugu izena lortzeko info substringa sortzen digu
  //izena bakarrik ateratzeko $arte irakurtzeko esaten diogu indexOf ekin
  //hau eta gero esaten diogusub string en bitartze  info hasiko dela $ aurrera
