@@ -123,7 +123,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     info = info.substring(info.indexOf("$"));
 
 
-  Pegatina pgtn = new Pegatina(int id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea);
+  Pegatina pgtn = new Pegatina(int id_ticketa,String izena, double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea);
   
   return pgtn;
  } 
