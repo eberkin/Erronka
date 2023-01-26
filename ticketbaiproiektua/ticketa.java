@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.*;
 
 @XmlRootElement (name="ticketa")//aita elementua ticketa izango da
 @XmlType(propOrder ={"izena","date","ordua","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
-@XmlAccessorType(XmlAccesType.FIELD)
+@XmlAccessorType(XmlAccessType.FIELD)
 
 public class ticketa {
     @XmlAttribute(required=true)
