@@ -121,7 +121,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
     // TODO code application logic here
 
-    
+    //mnist8
 }
 
 
