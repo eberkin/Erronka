@@ -29,5 +29,7 @@ public class Pegatina {
         this.id_denda = id_denda;
         this.id_langilea=id_langilea;
     }
+    public void setEtiketa(String lerroa) {
+    }
 
 }
