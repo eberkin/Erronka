@@ -1,3 +1,8 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "javax.activation-api-1.2.0.jar",
+        "jaxb-api-2.4.0-b180830.0359.jar"
+    ]
 }
