@@ -89,5 +89,5 @@ public class ticketa {
     public void setId_langilea(Integer id_langilea) {
         this.id_langilea = id_langilea;
     }
-    
+    //pegatina ondo
 }
