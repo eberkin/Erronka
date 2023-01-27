@@ -122,8 +122,16 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 
     String prezioTotala=info.substring(0, info.indexOf("$"));
     info = info.substring(info.indexOf("$"));
+    //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
 
-
+    int id_ticketa=Integer.parseInt(saltzaileID);
+    double pisuaDouble= Double.parseDouble(pisua);
+    double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
+    double prezioTotalaDouble=Double.parseDouble(prezioTotala);
+    //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
+    int id_denda = 0;
+    int id_langilea = 0;
+    //pegatina objetua sortu
   Pegatina pgtn = new Pegatina(int id_ticketa,String izena, double pisua, double prezioa_kiloko,double prezio_totala,int id_denda,int id_langilea);
   
   return pgtn;
