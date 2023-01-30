@@ -143,5 +143,5 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 
 }
 
-
+//MARIO
 }
