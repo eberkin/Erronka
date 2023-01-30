@@ -15,10 +15,11 @@ public class Pegatina {
     private Integer id_denda;
     private Integer id_langilea;
 
+
     public Pegatina(){
 
     }
-    public Pegatina(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
+    public Pegatina(Integer id_ticketa,String izena,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
         this.id_ticketa =id_ticketa;
         this.izena= izena;
         this.date = date;

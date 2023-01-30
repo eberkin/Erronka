@@ -65,6 +65,7 @@ else{
       etiketaZerrendaTmp = FitxategiaIrakurri(pathKarpeta + "\\"+ fitxategiZerrenda[i]);
       for(int j=0;j<etiketaZerrendaTmp.size(); j++) {
         etiketaZerrenda.add(etiketaZerrendaTmp.get(j));
+        
       }
     }
 
@@ -134,8 +135,8 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 
     return pgtn;
  } 
- public static String DataAtera() {
-  String Dokumentuizena = ;
+ public static String DataAtera( String Dokumentuizena) {
+  
   String urtea = Dokumentuizena.substring(0, 4);
   String hilabetea = Dokumentuizena.substring(5, 6);
   String eguna = Dokumentuizena.substring(7, 8);
