@@ -86,7 +86,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
       FileReader fr = new FileReader(dokumentua);
       BufferedReader br = new BufferedReader(fr);
       long timestamp = dokumentua.lastModified();
-      SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+      SimpleDateFormat dataetaordua = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
       String lerroa;
 
       while ((lerroa = br.readLine()) != null) {
@@ -143,7 +143,6 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
     // TODO code application logic here
 
-    //mnist8
 }
 
 
