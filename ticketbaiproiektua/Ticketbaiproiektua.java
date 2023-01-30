@@ -18,10 +18,10 @@ public class Ticketbaiproiektua {
 
 public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     // Path bakoitza sortzeko
-    String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\Tiketak";
-    String pathOkindegia =  "eberkin\\Erronka\\okindegia\\Tiketak";
-    String pathFrutategia= "eberkin\\Erronka\\frutategia\\Tiketak";
-    String pathTxarkutegia =  "eberkin\\Erronka\\txarkutegia\\Tiketak";
+    String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
+    String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
+    String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
+    String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
     // salmentaGuztiak ArrayList-a sortzeko
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
