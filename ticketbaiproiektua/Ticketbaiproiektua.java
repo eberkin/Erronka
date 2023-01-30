@@ -134,6 +134,16 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 
     return pgtn;
  } 
+ public static void DataAtera() {
+  String Dokumentuizena;
+  String urtea = Dokumentuizena.substring(0, 4);
+  String hilabetea = Dokumentuizena.substring(5, 6);
+  String eguna = Dokumentuizena.substring(7, 8);
+  String ordua = Dokumentuizena.substring(9, 10);
+  String minutua = Dokumentuizena.substring(11, 12);
+  String segundua = Dokumentuizena.substring(13, 14);
+   
+ }
  public static void main(String[] args) {
 
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
