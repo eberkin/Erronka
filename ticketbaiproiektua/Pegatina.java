@@ -59,22 +59,22 @@ public class Pegatina {
         int id_langilea = 0;
         //pegatina objetua sortu
        // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
-    
+    DataAtera(pathFitxategia);
         //return pgtn;
         return null;
 
     }
 
-    private String DataAtera( String Dokumentuizena) {
+    private String DataAtera( String pathfitxategiaString) {
   
   
-        String urtea = Dokumentuizena.substring(0, 4);
-        String hilabetea = Dokumentuizena.substring(5, 6);
-        String eguna = Dokumentuizena.substring(7, 8);
-        String ordua = Dokumentuizena.substring(9, 10);
-        String minutua = Dokumentuizena.substring(11, 12);
-        String segundua = Dokumentuizena.substring(13, 14);
-         return Dokumentuizena;
+        String urtea = pathfitxategiaString.substring(0, 4);
+        String hilabetea = pathfitxategiaString.substring(5, 6);
+        String eguna = pathfitxategiaString.substring(7, 8);
+        String ordua = pathfitxategiaString.substring(9, 10);
+        String minutua = pathfitxategiaString.substring(11, 12);
+        String segundua = pathfitxategiaString.substring(13, 14);
+         return pathfitxategiaString;
        }
 
 }
