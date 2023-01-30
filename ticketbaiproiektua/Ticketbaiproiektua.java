@@ -83,8 +83,6 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
       File dokumentua = new File(pathFitxategia);
       FileReader fr = new FileReader(dokumentua);
       BufferedReader br = new BufferedReader(fr);
-      long timestamp = dokumentua.lastModified();
-      SimpleDateFormat dataetaordua = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
       String lerroa;
 
       while ((lerroa = br.readLine()) != null) {

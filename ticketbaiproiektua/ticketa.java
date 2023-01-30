@@ -1,6 +1,5 @@
 package ticketbaiproiektua;
-import java.time.LocalDate;
-import java.time.LocalTime;
+
 
 import javax.xml.bind.annotation.*;
 
@@ -13,8 +12,6 @@ public class ticketa {
     private Integer id_ticketa;
     @XmlElement(name="izena")
     private String izena;
-    private LocalDate date;
-    private LocalTime ordua;
     private double pisua;
     private double prezioa_kiloko;
     private double prezio_totala;
@@ -27,8 +24,6 @@ public class ticketa {
     public void etiketazerrenda(Integer id_ticketa,String izena, LocalDate date, LocalTime ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
         this.id_ticketa =id_ticketa;
         this.izena= izena;
-        this.date = date;
-        this.ordua =ordua;
         this.pisua =pisua;
         this.prezioa_kiloko =prezioa_kiloko;
         this.prezio_totala=prezio_totala;
@@ -47,18 +42,7 @@ public class ticketa {
     public void setIzena(String izena) {
         this.izena = izena;
     }
-    public LocalDate getDate() {
-        return date;
-    }
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-    public LocalTime getOrdua() {
-        return ordua;
-    }
-    public void setOrdua(LocalTime ordua) {
-        this.ordua = ordua;
-    }
+    
     public double getPisua() {
         return pisua;
     }
