@@ -18,7 +18,7 @@ public class Ticketbaiproiektua {
 
 public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     // Path bakoitza sortzeko
-    String pathHarategia = "eberkin\\Erronka\\harategia\\Tiketak";
+    String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\Tiketak";
     String pathOkindegia =  "eberkin\\Erronka\\okindegia\\Tiketak";
     String pathFrutategia= "eberkin\\Erronka\\frutategia\\Tiketak";
     String pathTxarkutegia =  "eberkin\\Erronka\\txarkutegia\\Tiketak";
@@ -89,7 +89,10 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
       while ((lerroa = br.readLine()) != null) {
           // Objetu berria sortu
           Pegatina pg = new Pegatina();
-          pg.setEtiketa(lerroa);
+          int barraIndex = pathFitxategia.lastIndexOf("\\");
+          int puntoIndex = pathFitxategia.lastIndexOf(".");
+          String izena = pathFitxategia.substring(barraIndex+1,puntoIndex);
+          pg.setEtiketa(lerroa,izena);
           // Objetua listan sartu
           datuakGorde.add(pg);
       } 
@@ -131,20 +134,12 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     int id_denda = 0;
     int id_langilea = 0;
     //pegatina objetua sortu
-    Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
+   // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
 
-    return pgtn;
+    //return pgtn;
+    return null;
  } 
- public static String DataAtera( String Dokumentuizena) {
-  
-  String urtea = Dokumentuizena.substring(0, 4);
-  String hilabetea = Dokumentuizena.substring(5, 6);
-  String eguna = Dokumentuizena.substring(7, 8);
-  String ordua = Dokumentuizena.substring(9, 10);
-  String minutua = Dokumentuizena.substring(11, 12);
-  String segundua = Dokumentuizena.substring(13, 14);
-   return Dokumentuizena;
- }
+ 
  public static void main(String[] args) {
 
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
