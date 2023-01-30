@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.jar.Attributes.Name;
 import java.time.LocalDate; 
 import java.time.LocalTime;
+import java.text.SimpleDateFormat;
 /**
  *
  * @author 34665
@@ -84,7 +85,8 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
       File dokumentua = new File(pathFitxategia);
       FileReader fr = new FileReader(dokumentua);
       BufferedReader br = new BufferedReader(fr);
-
+      long timestamp = dokumentua.lastModified();
+      SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
       String lerroa;
 
       while ((lerroa = br.readLine()) != null) {
@@ -132,9 +134,9 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     int id_denda = 0;
     int id_langilea = 0;
     //pegatina objetua sortu
-  Pegatina pgtn = new Pegatina(int id_ticketa,String izena, double pisua, double prezioa_kiloko,double prezio_totala,int id_denda,int id_langilea);
-  
-  return pgtn;
+    Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
+
+    return pgtn;
  } 
  public static void main(String[] args) {
 
