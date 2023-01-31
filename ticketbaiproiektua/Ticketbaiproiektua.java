@@ -110,34 +110,9 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
  //hau eta gero esaten diogusub string en bitartze  info hasiko dela $ aurrera
  private static Pegatina SortuPegatina(String info, String fitxategiIzena)
  {
-    String izena = info.substring(0, info.indexOf("$"));
-    info = info.substring(info.indexOf("$"));
-
-    String saltzaileID = info.substring(0, info.indexOf("$"));
-    info = info.substring(info.indexOf("$"));
-
-    String prezioaKiloko =info.substring(0, info.indexOf("$"));
-    info = info.substring(info.indexOf("$"));
-
-    String pisua= info.substring(0, info.indexOf("$"));
-    info = info.substring(info.indexOf("$"));
-
-    String prezioTotala=info.substring(0, info.indexOf("$"));
-    info = info.substring(info.indexOf("$"));
-    //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
-
-    int id_ticketa=Integer.parseInt(saltzaileID);
-    double pisuaDouble= Double.parseDouble(pisua);
-    double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
-    double prezioTotalaDouble=Double.parseDouble(prezioTotala);
-    //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
-    int id_denda = 0;
-    int id_langilea = 0;
-    //pegatina objetua sortu
-   // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
-
-    //return pgtn;
-    return null;
+  
+  return null;
+    
  } 
  
  public static void main(String[] args) {
