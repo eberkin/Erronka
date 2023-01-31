@@ -58,9 +58,9 @@ public class Pegatina {
        // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
         //DatuAtera funtziora deituko diogu eta pathfitxategia pasatuko dio denbora ateratzeko
        DataAtera(pathFitxategia);
-        } catch(Exception e){
-            System.out.println(e);
-        }
+        
+    
+        
        
         
 
