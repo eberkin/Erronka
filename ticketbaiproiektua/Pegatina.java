@@ -23,7 +23,7 @@ public class Pegatina {
         this.id_ticketa =id_ticketa;
         this.izena= izena;
         this.date = date;
-        this.ordua =ordua;
+        this.ordua = ordua;
         this.pisua =pisua;
         this.prezioa_kiloko =prezioa_kiloko;
         this.prezio_totala=prezio_totala;
