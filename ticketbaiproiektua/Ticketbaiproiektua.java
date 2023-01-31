@@ -28,6 +28,11 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     //String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
     //String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
     //String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
+    //path igor 
+    //String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
+    //String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
+    //String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
+    //String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
     // salmentaGuztiak ArrayList-a sortzeko
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
