@@ -21,7 +21,7 @@ public class ticketa {
     public void etiketazerrenda(){
 
     }
-    public void etiketazerrenda(Integer id_ticketa,String izena,  date,  ordua,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
+    public void etiketazerrenda(Integer id_ticketa,String izena,double pisua, double prezioa_kiloko,double prezio_totala,Integer id_denda,Integer id_langilea){
         this.id_ticketa =id_ticketa;
         this.izena= izena;
         this.pisua =pisua;
