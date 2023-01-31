@@ -24,15 +24,15 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
   // String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
   //  String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
     //path mario el crack
-    //String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
-    //String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
-    //String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
-    //String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
+    String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
+    String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
+    String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
+    String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
     //path igor 
-    String pathHarategia = "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\harategia\\Tiketak";
-    String pathOkindegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\okindegia\\Tiketak";
-    String pathFrutategia= "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\frutategia\\Tiketak";
-    String pathTxarkutegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\txarkutegia\\Tiketak";
+    //String pathHarategia = "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\harategia\\Tiketak";
+    //String pathOkindegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\okindegia\\Tiketak";
+    //String pathFrutategia= "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\frutategia\\Tiketak";
+    //String pathTxarkutegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\txarkutegia\\Tiketak";
     // salmentaGuztiak ArrayList-a sortzeko
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
