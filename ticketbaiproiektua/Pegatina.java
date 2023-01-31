@@ -43,10 +43,11 @@ public class Pegatina {
         String prezioTotala=info;
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
-        try{
-            if(saltzaileID!=0){
-        int id_ticketa=Integer.parseInt(saltzaileID);
-        }
+            int id_ticketa;
+            if(saltzaileID!="autosalmenta")
+                id_ticketa=Integer.parseInt(saltzaileID);
+            else id_ticketa =0;
+       
         double pisuaDouble= Double.parseDouble(pisua);
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
