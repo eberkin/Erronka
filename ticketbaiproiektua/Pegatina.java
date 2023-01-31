@@ -29,22 +29,24 @@ public class Pegatina {
         String info = lerroa;
 
         String izena = info.substring(0, info.indexOf("$"));
-        info = info.substring(info.indexOf("$"));
+        info = info.substring(info.indexOf("$")+1);
     
         String saltzaileID = info.substring(0, info.indexOf("$"));
-        info = info.substring(info.indexOf("$"));
+        info = info.substring(info.indexOf("$")+1);
     
         String prezioaKiloko =info.substring(0, info.indexOf("$"));
-        info = info.substring(info.indexOf("$"));
+        info = info.substring(info.indexOf("$")+1);
     
         String pisua= info.substring(0, info.indexOf("$"));
-        info = info.substring(info.indexOf("$"));
+        info = info.substring(info.indexOf("$")+1);
     
-        String prezioTotala=info.substring(0, info.indexOf("$"));
-        info = info.substring(info.indexOf("$"));
+        String prezioTotala=info;
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
+        try{
+            if(saltzaileID!=0){
         int id_ticketa=Integer.parseInt(saltzaileID);
+        }
         double pisuaDouble= Double.parseDouble(pisua);
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
@@ -55,6 +57,9 @@ public class Pegatina {
        // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
         //DatuAtera funtziora deituko diogu eta pathfitxategia pasatuko dio denbora ateratzeko
        DataAtera(pathFitxategia);
+        } catch(Exception e){
+            System.out.println(e);
+        }
        
         
 
