@@ -97,7 +97,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
       File dokumentua = new File(pathFitxategia);
       FileReader fr = new FileReader(dokumentua);
       BufferedReader br = new BufferedReader(fr);
-      String lerroa;
+      String lerroa="";      
 
       while ((lerroa = br.readLine()) != null) {
           // Objetu berria sortu
@@ -105,6 +105,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
           int barraIndex = pathFitxategia.lastIndexOf("\\");
           int puntoIndex = pathFitxategia.lastIndexOf(".");
           String izena = pathFitxategia.substring(barraIndex+1,puntoIndex);
+          lerroa=lerroa.replace(',','.');
           pg.setEtiketa(lerroa,izena);
           // Objetua listan sartu
           datuakGorde.add(pg);

@@ -26,6 +26,8 @@ public class Pegatina {
         this.id_langilea=id_langilea;
     }
     public void setEtiketa(String lerroa, String pathFitxategia) {
+      try {
+
         String info = lerroa;
 
         String izena = info.substring(0, info.indexOf("$"));
@@ -43,12 +45,14 @@ public class Pegatina {
         String prezioTotala=info;
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
-            int id_ticketa;
+            int id_ticketa=0;
             if(!saltzaileID.equals("autosalmenta"))
                 id_ticketa=Integer.parseInt(saltzaileID);
             else id_ticketa =0;
        
-        double pisuaDouble= Double.parseDouble(pisua);
+        double pisuaDouble=Double.parseDouble(pisua);
+        
+        
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
         //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
@@ -59,11 +63,9 @@ public class Pegatina {
         //DatuAtera funtziora deituko diogu eta pathfitxategia pasatuko dio denbora ateratzeko
        DataAtera(pathFitxategia);
         
-    
-        
-       
-        
-
+      } catch (Exception e) {
+        System.out.println(e.toString());
+      }
     }
 
     private String DataAtera( String pathfitxategiaString) {
