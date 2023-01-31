@@ -9,6 +9,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.jar.Attributes.Name;
 import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Scanner;
 /**
  *
  * @author 34665
@@ -129,7 +131,9 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
  public static void main(String[] args) {
 
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
-    // TODO code application logic here
+    Scanner sc;
+    sc= new Scanner(System.in);
+    sc.useLocale(Locale.US);
 
 }
 

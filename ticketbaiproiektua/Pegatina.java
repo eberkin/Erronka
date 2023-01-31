@@ -44,7 +44,7 @@ public class Pegatina {
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
             int id_ticketa;
-            if(saltzaileID!="autosalmenta")
+            if(!saltzaileID.equals("autosalmenta"))
                 id_ticketa=Integer.parseInt(saltzaileID);
             else id_ticketa =0;
        
