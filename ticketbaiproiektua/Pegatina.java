@@ -50,7 +50,9 @@ public class Pegatina {
                 id_ticketa=Integer.parseInt(saltzaileID);
             else id_ticketa =0;
        
-        double pisuaDouble=Double.parseDouble(pisua);
+            pisua= pisua.replace(",", ".");
+            double pisuaDouble=Double.parseDouble(pisua);
+       
         
         
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
