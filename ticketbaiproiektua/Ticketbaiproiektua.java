@@ -6,6 +6,7 @@ package ticketbaiproiektua;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.jar.Attributes.Name;
 import java.text.SimpleDateFormat;
@@ -126,7 +127,10 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
     
  } 
  
- public static void main(String[] args) {
+ /**
+ * @param args
+ */
+public static void main(String[] args) {
 
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
     // TODO code application logic here
