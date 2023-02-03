@@ -46,9 +46,9 @@ public class Pegatina {
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
             int id_ticketa=0;
-            if(!saltzaileID.equals("autosalmenta"))
-                id_ticketa=Integer.parseInt(saltzaileID);
-            else id_ticketa =0;
+            
+            id_ticketa=Integer.parseInt(saltzaileID);
+            
        
             pisua= pisua.replace(",", ".");
             double pisuaDouble=Double.parseDouble(pisua);
