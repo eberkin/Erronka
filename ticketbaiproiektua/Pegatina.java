@@ -57,15 +57,22 @@ public class Pegatina {
             
             id_ticketa=Integer.parseInt(saltzaileID);
             
-       
+
             pisua= pisua.replace(",", ".");
             double pisuaDouble=Double.parseDouble(pisua);
-       
-        
+
+
             
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
        
+        //Data parseatuko ditugu intera
+        int urteaInt = Integer.parseInt(urtea);
+        int hilabeteaInt = Integer.parseInt(hilabetea);
+        int egunaInt = Integer.parseInt(eguna);
+        int orduaInt = Integer.parseInt(ordua);
+        int minutuaInt = Integer.parseInt(minutua);
+        int segunduaInt = Integer.parseInt(segundua);
         //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
         int id_denda = 0;
         int id_langilea = 0;
