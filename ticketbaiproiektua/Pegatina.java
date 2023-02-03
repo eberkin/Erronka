@@ -43,6 +43,14 @@ public class Pegatina {
         info = info.substring(info.indexOf("$")+1);
     
         String prezioTotala=info;
+
+        //String ezberdinak sortzen dira eta substringekin ezartzen diogu zer den bakoitza
+        String urtea = pathFitxategia.substring(0, 4);
+        String hilabetea = pathFitxategia.substring(5, 6);
+        String eguna = pathFitxategia.substring(7, 8);
+        String ordua = pathFitxategia.substring(9, 10);
+        String minutua = pathFitxategia.substring(11, 12);
+        String segundua = pathFitxategia.substring(13, 14);
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
             int id_ticketa;
@@ -54,10 +62,10 @@ public class Pegatina {
             double pisuaDouble=Double.parseDouble(pisua);
        
         
-        
+            
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
-        DataAtera(pathFitxategia);
+       
         //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
         int id_denda = 0;
         int id_langilea = 0;
@@ -69,18 +77,7 @@ public class Pegatina {
       } catch (Exception e) {
         System.out.println(e.toString());
       }
+    
     }
-
-    private String DataAtera( String pathfitxategiaString) {
-  
-        //String ezberdinak sortzen dira eta substringekin ezartzen diogu zer den bakoitza
-        String urtea = pathfitxategiaString.substring(0, 4);
-        String hilabetea = pathfitxategiaString.substring(5, 6);
-        String eguna = pathfitxategiaString.substring(7, 8);
-        String ordua = pathfitxategiaString.substring(9, 10);
-        String minutua = pathfitxategiaString.substring(11, 12);
-        String segundua = pathfitxategiaString.substring(13, 14);
-         return pathfitxategiaString;
-       }
 
 }
