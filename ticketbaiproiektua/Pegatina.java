@@ -57,13 +57,14 @@ public class Pegatina {
         
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
+        DataAtera(pathFitxategia);
         //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
         int id_denda = 0;
         int id_langilea = 0;
         //pegatina objetua sortu
        // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
         //DatuAtera funtziora deituko diogu eta pathfitxategia pasatuko dio denbora ateratzeko
-       DataAtera(pathFitxategia);
+       
         
       } catch (Exception e) {
         System.out.println(e.toString());
