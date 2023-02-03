@@ -45,7 +45,7 @@ public class Pegatina {
         String prezioTotala=info;
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
-            int id_ticketa=0;
+            int id_ticketa;
             
             id_ticketa=Integer.parseInt(saltzaileID);
             
