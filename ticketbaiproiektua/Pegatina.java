@@ -46,11 +46,11 @@ public class Pegatina {
 
         //String ezberdinak sortzen dira eta substringekin ezartzen diogu zer den bakoitza
         String urtea = pathFitxategia.substring(0, 4);
-        String hilabetea = pathFitxategia.substring(5, 6);
-        String eguna = pathFitxategia.substring(7, 8);
-        String ordua = pathFitxategia.substring(9, 10);
-        String minutua = pathFitxategia.substring(11, 12);
-        String segundua = pathFitxategia.substring(13, 14);
+        String hilabetea = pathFitxategia.substring(4, 6);
+        String eguna = pathFitxategia.substring(6, 8);
+        String ordua = pathFitxategia.substring(8, 10);
+        String minutua = pathFitxategia.substring(10, 12);
+        String segundua = pathFitxategia.substring(12, 14);
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
     
             int id_ticketa;
