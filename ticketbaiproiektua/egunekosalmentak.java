@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 
     @XmlRootElement(name= "eguneko salmentak")
-    @XmlAccessorType(XnmlAccesstype.FIELD)
+    @XmlAccessorType(XnmlAccessType.FIELD)
     public class EgunekoSalmentak {
         public EgunekoSalmentak() {
 

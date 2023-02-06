@@ -6,9 +6,32 @@ package ticketbaiproiektua;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.jar.Attributes.Name;
+import java.io.IOException;
+import java.nio.file.CopyOption;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.time.LocalDate;
+import javax.xml.bind.JAXBException;
+import javax.xml.XMLConstants;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+import org.xml.sax.SAXException;
+
+import com.mysql.cj.xdevapi.Statement;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+
 import java.text.SimpleDateFormat;
 /**
  *
@@ -54,7 +77,31 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
 }    
 public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
 
+  EgunekoSalmentak salmentaZerrenda = new EgunekoSalmentak(salmentaGuztiak);
+
+  JAXBContext  contexto =JAXBContext.newInstance(egunekosalmentak.class);
+  Marshaller m = contexto.createMarshaller();
+  m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
+  m.marshal(salmentaZerrenda,new FileWriter("Salmenta.xml"));  
+  try {
+              SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
   
+              Source schemaFile = new StreamSource(new File("5ERRONKA.xsd"));
+              Schema schema = factory.newSchema(schemaFile);
+  
+              Validator validator = schema.newValidator();
+  
+              Source source = new StreamSource("Salmenta.xml");
+              validator.validate(source);
+              System.out.println("ONDO BALIDATUTA DAGO");
+              System.out.println("BACKUP KARPETARA BIALDUKO DET");
+          } catch (SAXException  ex) {
+              System.err.println(ex.getMessage());
+            }
+
+
+
+
 } 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
 /*
