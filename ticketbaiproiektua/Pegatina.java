@@ -68,8 +68,11 @@ public class Pegatina {
         int orduaInt = Integer.parseInt(ordua);
         int minutuaInt = Integer.parseInt(minutua);
         int segunduaInt = Integer.parseInt(segundua);
-            
+          
+        
+        prezioaKiloko= prezioaKiloko.replace(",", ".");
         double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
+        prezioTotala= prezioTotala.replace(",", ".");
         double prezioTotalaDouble=Double.parseDouble(prezioTotala);
        
         
