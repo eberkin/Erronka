@@ -86,7 +86,7 @@ public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
   try {
               SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
   
-              Source schemaFile = new StreamSource(new File("5ERRONKA.xsd"));
+              Source schemaFile = new StreamSource(new File(".xsd"));
               Schema schema = factory.newSchema(schemaFile);
   
               Validator validator = schema.newValidator();
@@ -94,7 +94,6 @@ public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
               Source source = new StreamSource("Salmenta.xml");
               validator.validate(source);
               System.out.println("ONDO BALIDATUTA DAGO");
-              System.out.println("BACKUP KARPETARA BIALDUKO DET");
           } catch (SAXException  ex) {
               System.err.println(ex.getMessage());
             }
