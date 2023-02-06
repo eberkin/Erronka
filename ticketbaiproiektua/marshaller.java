@@ -8,7 +8,7 @@ public class marshaller {
     public static void main(String[] args) throws Exception {
         // Crear un modelo de objeto Java que represente la estructura del archivo XML
         MyModel model = new MyModel();
-        model.setName("John Doe");
+        model.setName("ticketa");
         model.setAge(30);
 
         // Crear una instancia de JAXBContext

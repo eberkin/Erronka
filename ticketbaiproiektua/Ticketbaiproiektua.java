@@ -52,7 +52,10 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     // salmentaGuztiak ArrayList-a itzultzen da
     return salmentaGuztiak;
 }    
+public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
 
+  
+} 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
 /*
 KarpetaIrakurri metodoa:
