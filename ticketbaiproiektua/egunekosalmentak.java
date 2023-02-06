@@ -1,21 +1,21 @@
 import javax.util.ArrayList;
-import javax.xml.bind.annotation.XmlAccesType;
+import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
     @XmlRootElement(name= "eguneko salmentak")
-    @XmlAccessorType(XnmlAccessType.FIELD)
-    public class EgunekoSalmentak {
-        public EgunekoSalmentak() {
+    @XmlAccessorType(XmlAccessType.FIELD)
+    public class egunekosalmentak {
+        public egunekosalmentak() {
 
         }
 
     @XmlElement (name="salmenta")
     public Salmenta[]salmentak;
 
-    public EgunekoSalmentak(ArrayList<Salmenta>sal){
+    public egunekosalmentak(ArrayList<Salmenta>sal){
         salmentak=new Salmenta[sal.size()];
 
         for (int i =0;i<sal.size();i++){
