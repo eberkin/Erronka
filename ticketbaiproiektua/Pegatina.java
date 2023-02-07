@@ -30,7 +30,7 @@ public class Pegatina {
 
         String info = lerroa;
 
-        String izena = info.substring(0, info.indexOf("$"));
+        izena = info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
     
         String saltzaileID = info.substring(0, info.indexOf("$"));
@@ -39,7 +39,7 @@ public class Pegatina {
         String prezioaKiloko =info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
     
-        String pisua= info.substring(0, info.indexOf("$"));
+        String pisua_p= info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
     
         String prezioTotala=info;
@@ -57,9 +57,9 @@ public class Pegatina {
             
             id_ticketa=Integer.parseInt(saltzaileID);
             
-
-            pisua= pisua.replace(",", ".");
-            double pisuaDouble=Double.parseDouble(pisua);
+            id_langilea=Integer.parseInt(saltzaileID);
+            pisua_p= pisua_p.replace(",", ".");
+            pisua = Double.parseDouble(pisua_p);
 
           //Data parseatuko ditugu intera
         int urteaInt = Integer.parseInt(urtea);
@@ -76,9 +76,7 @@ public class Pegatina {
         prezio_totala =Double.parseDouble(prezioTotala);
        
         
-        //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
-        int id_denda = 0;
-        int id_langilea = 0;
+    
         //pegatina objetua sortu
        // Pegatina pgtn = new Pegatina(id_ticketa, izena, null, null, pisuaDouble, prezioaKilokoDouble, prezioTotalaDouble, id_denda, id_langilea);
         //DatuAtera funtziora deituko diogu eta pathfitxategia pasatuko dio denbora ateratzeko
