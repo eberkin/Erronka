@@ -181,6 +181,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
 public static void main(String[] args) {
 
     ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
+    ArrayList<EgunekoSalmentak> 
     // TODO code application logic here
 
 }
