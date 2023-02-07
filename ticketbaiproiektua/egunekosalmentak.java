@@ -7,18 +7,18 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
-    @XmlRootElement(name= "EgunekoSalmentak")
+    @XmlRootElement(name = "EgunekoSalmentak")
     @XmlAccessorType(XmlAccessType.FIELD)
     public class egunekosalmentak {
         public egunekosalmentak() {
 
         }
 
-    @XmlElement (name="salmenta")
+    @XmlElement (name = "salmenta")
     public Salmenta[]salmentak;
 
     public egunekosalmentak(ArrayList<Salmenta>sal){
-        salmentak=new Salmenta[sal.size()];
+        salmentak = new Salmenta[sal.size()];
 
         for (int i =0;i<sal.size();i++){
             salmentak [i]= sal.get(i);
