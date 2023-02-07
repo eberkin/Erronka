@@ -28,7 +28,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import org.xml.sax.SAXException;
 
-import com.mysql.cj.xdevapi.Statement;
+//import com.mysql.cj.xdevapi.Statement;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 
@@ -43,15 +43,15 @@ public class Ticketbaiproiektua {
 public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     // Path bakoitza sortzeko
     //path eber
-    String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
-    String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
-    String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
-    String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
+    //String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
+    //String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
+    //String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
+    //String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
     //path mario el crack
-    //String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
-    //String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
-    //String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
-    //String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
+    String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
+    String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
+    String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
+    String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
     //path igor 
     //String pathHarategia = "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\harategia\\Tiketak";
     //String pathOkindegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\okindegia\\Tiketak";
@@ -76,10 +76,9 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     return salmentaGuztiak;
 }    
 public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
-
-  EgunekoSalmentak salmentaZerrenda = new EgunekoSalmentak(salmentaGuztiak);
-
-  JAXBContext  contexto =JAXBContext.newInstance(egunekosalmentak.class);
+/*
+  ArrayList<String> salmentaZerrenda = new EgunekoSalmentak(salmentaGuztiak);
+  JAXBContext  contexto =JAXBContext.newInstance(EgunekoSalmentak.class);
   Marshaller m = contexto.createMarshaller();
   m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
   m.marshal(salmentaZerrenda,new FileWriter("Salmenta.xml"));  
@@ -100,7 +99,7 @@ public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
 
 
 
-
+*/
 } 
 public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
 /*

@@ -1,4 +1,4 @@
-package ticketbaiproiektua;
+package COPIAK;
 
 
 import javax.xml.bind.annotation.*;

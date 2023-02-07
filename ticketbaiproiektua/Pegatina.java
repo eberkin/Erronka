@@ -70,10 +70,10 @@ public class Pegatina {
         int segunduaInt = Integer.parseInt(segundua);
           
         
-        prezioaKiloko= prezioaKiloko.replace(",", ".");
-        double prezioaKilokoDouble=Double.parseDouble(prezioaKiloko);
-        prezioTotala= prezioTotala.replace(",", ".");
-        double prezioTotalaDouble=Double.parseDouble(prezioTotala);
+        prezioaKiloko = prezioaKiloko.replace(",", ".");
+        prezioa_kiloko =Double.parseDouble(prezioaKiloko);
+        prezioTotala = prezioTotala.replace(",", ".");
+        prezio_totala =Double.parseDouble(prezioTotala);
        
         
         //id denda eta id_langilea variableak sartu eta definituak ez badaude definitu
