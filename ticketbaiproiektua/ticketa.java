@@ -9,13 +9,19 @@ import javax.xml.bind.annotation.*;
 
 public class ticketa {
     @XmlAttribute(required=true)
+    @XmlElement(name="id_ticketa")
     private Integer id_ticketa;
     @XmlElement(name="izena")
     private String izena;
+    @XmlElement(name="pisua")
     private double pisua;
+    @XmlElement(name="prezioa_kiloko")
     private double prezioa_kiloko;
+    @XmlElement(name="prezio_totala")
     private double prezio_totala;
+    @XmlElement(name="id_denda")
     private Integer id_denda;
+    @XmlElement(name="id_langilea")
     private Integer id_langilea;
 
     public void etiketazerrenda(){
