@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 
 public class ticketa {
-    @XmlAttribute(required=true)
     @XmlElement(name="id_ticketa")
     private Integer id_ticketa;
     @XmlElement(name="izena")
