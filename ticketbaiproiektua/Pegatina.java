@@ -3,7 +3,7 @@ package ticketbaiproiektua;
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement (name="ticketa")//aita elementua ticketa izango da
-@XmlType(propOrder ={"izena","date","ordua","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
+@XmlType(propOrder ={"izena","urtea_data","hilabetea_data","eguna_data","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
 @XmlAccessorType(XmlAccessType.FIELD)
 
 
@@ -23,6 +23,12 @@ public class Pegatina {
   private String id_denda;
   @XmlElement(name="id_langilea")
   private Integer id_langilea;
+  @XmlElement(name="eguna_data")
+  private Integer eguna_data;
+  @XmlElement(name="hilabetea_data")
+  private Integer hilabetea_data;
+  @XmlElement(name="urtea_data")
+  private Integer urtea_data;
 
   public void etiketazerrenda(){
 
@@ -140,7 +146,9 @@ public class Pegatina {
         int minutuaInt = Integer.parseInt(minutua);
         int segunduaInt = Integer.parseInt(segundua);
           
-        
+        hilabetea_data = hilabeteaInt;
+        eguna_data= egunaInt;
+        urtea_data = urteaInt;
         prezioaKiloko = prezioaKiloko.replace(",", ".");
         prezioa_kiloko =Double.parseDouble(prezioaKiloko);
         prezioTotala = prezioTotala.replace(",", ".");
