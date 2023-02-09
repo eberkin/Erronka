@@ -61,10 +61,10 @@ public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
     ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
     // hainbat karpetatako pegatinak irakurtzen dituen metodo bat deitu
-    ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia);
-    ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia);
-    ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia);
-    ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia);
+    ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia, "Harategia");
+    ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia, "Okindegia");
+    ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia, "Frutategia");
+    ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia, "Txarkutegia");
 
     // hainbat karpetatako pegatinak salmentaGuztiak ArrayList-era gehitu
     salmentaGuztiak.addAll(harategikoPegatinak);
@@ -101,7 +101,7 @@ public static void Xmlsortu( ArrayList<Pegatina> salmentaGuztiak){
 
 */
 } 
-public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta){
+public static ArrayList <Pegatina>  KarpetaIrakurri(String pathKarpeta, String idDenda){
 /*
 KarpetaIrakurri metodoa:
 - Metodo honek, pasatutako path-a izan ezkero fitxategi zerrenda bat irakurtzen du,
@@ -122,7 +122,7 @@ eta bakoitza irakurtzeko FitxategiaIrakurri metodoari deitzen dio.
 else{
     for (int i =0; i<fitxategiZerrenda.length;i++){
       //  System.out.println(fitxategiZerrenda[i]);
-      etiketaZerrendaTmp = FitxategiaIrakurri(pathKarpeta + "\\"+ fitxategiZerrenda[i]);
+      etiketaZerrendaTmp = FitxategiaIrakurri(pathKarpeta + "\\"+ fitxategiZerrenda[i], idDenda);
       for(int j=0;j<etiketaZerrendaTmp.size(); j++) {
         etiketaZerrenda.add(etiketaZerrendaTmp.get(j));
         
@@ -137,7 +137,7 @@ return etiketaZerrenda;
     /**
      * @param args the command line arguments
      */
-public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
+public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia, String idDenda){
   ArrayList<Pegatina> datuakGorde = new ArrayList<Pegatina>();
   try {
       //DOKUMENTUA IRAKURRI
@@ -152,7 +152,7 @@ public static  ArrayList<Pegatina> FitxategiaIrakurri(String pathFitxategia){
           int barraIndex = pathFitxategia.lastIndexOf("\\");
           int puntoIndex = pathFitxategia.lastIndexOf(".");
           String izena = pathFitxategia.substring(barraIndex+1,puntoIndex);
-          pg.setEtiketa(lerroa,izena);
+          pg.setEtiketa(lerroa,izena, idDenda);
           // Objetua listan sartu
           datuakGorde.add(pg);
       } 

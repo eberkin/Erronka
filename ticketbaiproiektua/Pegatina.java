@@ -9,7 +9,7 @@ public class Pegatina {
     private double pisua;
     private double prezioa_kiloko;
     private double prezio_totala;
-    private Integer id_denda;
+    private String id_denda;
     private Integer id_langilea;
 
 
@@ -25,10 +25,12 @@ public class Pegatina {
         this.id_denda = id_denda;
         this.id_langilea=id_langilea;
     }
-    public void setEtiketa(String lerroa, String pathFitxategia) {
+    public void setEtiketa(String lerroa, String pathFitxategia, String idDenda) {
       try {
 
         String info = lerroa;
+
+        this.id_denda=idDenda;
 
         izena = info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
