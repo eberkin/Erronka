@@ -3,7 +3,7 @@ package ticketbaiproiektua;
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement (name="ticketa")//aita elementua ticketa izango da
-@XmlType(propOrder ={"izena","urtea_data","hilabetea_data","eguna_data","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
+@XmlType(propOrder ={"id_ticketa","izena","urtea_data","hilabetea_data","eguna_data","pisua","prezioa_kiloko","prezio_totala","id_denda","id_langilea"})
 @XmlAccessorType(XmlAccessType.FIELD)
 
 
