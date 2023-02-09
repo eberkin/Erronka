@@ -9,8 +9,6 @@ import javax.xml.bind.annotation.*;
 
 
 public class Pegatina {
-    
-  @XmlAttribute(required=true)
   @XmlElement(name="id_ticketa")
   private Integer id_ticketa;
   @XmlElement(name="izena")
