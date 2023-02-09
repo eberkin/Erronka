@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlRootElement;
         }
 
     @XmlElement (name = "salmenta")
-    public ticketa[]salmentak;
+    public Pegatina[]salmentak;
 
-    public EgunekoSalmentak(ArrayList<ticketa>sal){
-        salmentak = new ticketa[sal.size()];
+    public EgunekoSalmentak(ArrayList<Pegatina>sal){
+        salmentak = new Pegatina[sal.size()];
 
         for (int i =0;i<sal.size();i++){
             salmentak [i]= sal.get(i);
