@@ -92,7 +92,7 @@ public class Ticketbaiproiektua {
       
                   Validator validator = schema.newValidator();
       
-                  Source source = new StreamSource("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Salmenta.xml");
+                  Source source = new StreamSource("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml");
                   validator.validate(source);
                   System.out.println("ONDO BALIDATUTA DAGO");
               } catch (SAXException  ex) {
