@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @XmlElement (name = "salmenta")
     public Pegatina[]salmentak;
 
+
     public EgunekoSalmentak(ArrayList<Pegatina>sal){
         salmentak = new Pegatina[sal.size()];
 

@@ -83,7 +83,7 @@ public class Ticketbaiproiektua {
       JAXBContext  contexto =JAXBContext.newInstance(EgunekoSalmentak.class);
       Marshaller m = contexto.createMarshaller();
       m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
-      m.marshal(salmentaZerrenda,new FileWriter("Salmenta.xml"));  
+      m.marshal(salmentaZerrenda,new FileWriter("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml"));  
       try {
                   SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
       
