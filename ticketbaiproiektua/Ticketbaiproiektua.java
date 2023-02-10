@@ -104,6 +104,19 @@ public class Ticketbaiproiektua {
   catch(Exception ex2){
     System.out.println(ex2);
   }
+  //xml balidatu egingo da
+  try {
+
+        SchemaFactory factory = 
+        SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        Schema schema = factory.newSchema(new File("salmenta.xsd"));
+        Validator validator = schema.newValidator();
+        validator.validate(new StreamSource(new File("salmenta.xml")));
+        System.out.println("XML balidatuta dago");
+
+ } catch (Exception e) {
+        System.out.println("XML ez dago balidatuta: " + e.getMessage());
+ }
 }
 
 
