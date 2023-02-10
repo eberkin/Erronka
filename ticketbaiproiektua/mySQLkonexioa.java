@@ -20,7 +20,7 @@ public class mySQLkonexioa {
       if (conn == null) {
          try {
             Class.forName(JDBC_DRIVER);
-            conn = DriverManager.getConnection("jdbc:mysql://192.168.100.4:3306/salmentak", "ERRONKAML", "izarraitz2023");
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.:3306/salmentak", "root", "Pa$$w0rd");
             System.out.println("ONDO KONEKTATU DA");
          } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
