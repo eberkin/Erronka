@@ -8,14 +8,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
-    @XmlRootElement(name = "EgunekoSalmentak")
+    @XmlRootElement(name = "ticketak")
     @XmlAccessorType(XmlAccessType.FIELD)
     public class EgunekoSalmentak {
         public EgunekoSalmentak() {
 
         }
 
-    @XmlElement (name = "salmenta")
+    @XmlElement (name = "ticketa")
     public Pegatina[]salmentak;
 
 

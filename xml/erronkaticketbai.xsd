@@ -3,14 +3,9 @@
 		<xs:element name="ticketak">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="ticketa">
+					<xs:element name="ticketa" maxOccurs="unbounded">
 						<xs:complexType>
 							<xs:sequence>
-								<xs:element name="id_ticketa" type="xs:integer"/>
-								<xs:element name="data" type="xs:date"/>
-								<xs:element name="ordua" type="xs:time"/>
-								<xs:element name="id_langilea" type="xs:integer"/>
-								<xs:element name="id_denda" type="xs:integer"/>
 								<xs:element name="izena">
 									<xs:simpleType>	
 										<xs:restriction base= "xs:string">
@@ -18,6 +13,9 @@
 										</xs:restriction>	
 									</xs:simpleType>
 								</xs:element>
+								<xs:element name="urtea_data" type="xs:integer"/>
+								<xs:element name="hilabetea_data" type="xs:integer"/>
+								<xs:element name="eguna_data" type="xs:integer"/>
 								<xs:element name="pisua">
 									<xs:simpleType>
 											<xs:restriction base= "xs:decimal">
@@ -42,7 +40,9 @@
 											<xs:fractionDigits value = "2"/>
 										</xs:restriction>
 									</xs:simpleType>
-								</xs:element>			
+								</xs:element>
+								<xs:element name="id_denda" type="xs:string"/>
+								<xs:element name="id_langilea" type="xs:integer"/>			
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>	
@@ -55,7 +55,3 @@
 
 
 		
-
-
-
-

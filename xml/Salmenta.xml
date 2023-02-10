@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<EgunekoSalmentak>
-    <salmenta>
+<ticketak>
+    <ticketa>
         <izena>istarrak</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -10,8 +10,8 @@
         <prezio_totala>9.44</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>kostila</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -21,8 +21,8 @@
         <prezio_totala>12.38</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>odolkia</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -32,8 +32,8 @@
         <prezio_totala>35.64</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>oilaskoa</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -43,8 +43,8 @@
         <prezio_totala>22.33</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>txorizoa</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -54,8 +54,8 @@
         <prezio_totala>21.96</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>txuleta</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -65,8 +65,8 @@
         <prezio_totala>18.54</prezio_totala>
         <id_denda>Harategia</id_denda>
         <id_langilea>7</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>binbo</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -76,8 +76,8 @@
         <prezio_totala>8.8</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>croasant</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -87,8 +87,8 @@
         <prezio_totala>34.1</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>donuts</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -98,8 +98,8 @@
         <prezio_totala>32.76</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>ogia</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -109,8 +109,8 @@
         <prezio_totala>19.08</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>pastela</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -120,8 +120,8 @@
         <prezio_totala>20.7</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>sandwich</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -131,8 +131,8 @@
         <prezio_totala>5.22</prezio_totala>
         <id_denda>Okindegia</id_denda>
         <id_langilea>6</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>anana</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -142,8 +142,8 @@
         <prezio_totala>0.96</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>brokolia</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -153,8 +153,8 @@
         <prezio_totala>6.4</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>marrubia</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -164,8 +164,8 @@
         <prezio_totala>20.48</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>gereziak</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -175,8 +175,8 @@
         <prezio_totala>4.92</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>limoiak</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -186,8 +186,8 @@
         <prezio_totala>20.3</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>mahatsa</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -197,8 +197,8 @@
         <prezio_totala>3.78</prezio_totala>
         <id_denda>Frutategia</id_denda>
         <id_langilea>5</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>bacon</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -208,8 +208,8 @@
         <prezio_totala>7.15</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>jamonyor</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -219,8 +219,8 @@
         <prezio_totala>0.09</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>odolkia</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -230,8 +230,8 @@
         <prezio_totala>17.28</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>salami</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -241,8 +241,8 @@
         <prezio_totala>9.71</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>txorizoa</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -252,8 +252,8 @@
         <prezio_totala>13.59</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-    <salmenta>
+    </ticketa>
+    <ticketa>
         <izena>urdaiazpikoa</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
@@ -263,5 +263,5 @@
         <prezio_totala>38.5</prezio_totala>
         <id_denda>Txarkutegia</id_denda>
         <id_langilea>4</id_langilea>
-    </salmenta>
-</EgunekoSalmentak>
+    </ticketa>
+</ticketak>
