@@ -2,7 +2,7 @@ package ticketbaiproiektua;
 
 import java.sql.*;
 
-public class Conexion {
+public class mySQLkonexioa {
 private static Connection cnx = null;
 public static Connection obtener() throws SQLException,  ClassNotFoundException {
   if (cnx == null) {
