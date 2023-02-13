@@ -41,8 +41,8 @@ import java.text.SimpleDateFormat;
 public class Ticketbaiproiektua {
 
   //EberKinki
-  public static String xmlPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\salmenta.xml";
-  public static String xsdPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\erronkaticketbai.xsd";
+  public static String xmlPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\xml\\salmenta.xml";
+  public static String xsdPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\xml\\erronkaticketbai.xsd";
 
   //Mario
   //public static String xmlPath = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml";
