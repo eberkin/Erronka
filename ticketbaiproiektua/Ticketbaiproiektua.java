@@ -41,6 +41,14 @@ import java.text.SimpleDateFormat;
 public class Ticketbaiproiektua {
 
 
+  //Mario
+  //public static String xmlPath = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml";
+  //public static String xsdPath = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\erronkaticketbai.xsd";
+
+  //Igor
+  public static String xmlPath = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml";
+  public static String xsdPath = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\erronkaticketbai.xsd";
+
     public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
         // Path bakoitza sortzeko
         //path eber
@@ -49,15 +57,15 @@ public class Ticketbaiproiektua {
         //String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
         //String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
         //path mario el crack
-        String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
-        String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
-        String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
-        String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
-        //path igor 
-        //String pathHarategia = "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\harategia\\Tiketak";
-        //String pathOkindegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\okindegia\\Tiketak";
-        //String pathFrutategia= "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\frutategia\\Tiketak";
-        //String pathTxarkutegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\txarkutegia\\Tiketak";
+      //  String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
+      //  String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
+      //  String pathFrutategia= "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\frutategia\\Tiketak";
+      //  String pathTxarkutegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\txarkutegia\\Tiketak";
+      //  path igor 
+        String pathHarategia = "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\harategia\\Tiketak";
+        String pathOkindegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\okindegia\\Tiketak";
+        String pathFrutategia= "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\frutategia\\Tiketak";
+        String pathTxarkutegia =  "C:\\Users\\34665\\Desktop\\PROGRAMAZIOA\\githuberronka\\Erronka\\txarkutegia\\Tiketak";
       // salmentaGuztiak ArrayList-a sortzeko
         ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
@@ -83,15 +91,15 @@ public class Ticketbaiproiektua {
       JAXBContext  contexto =JAXBContext.newInstance(EgunekoSalmentak.class);
       Marshaller m = contexto.createMarshaller();
       m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
-      m.marshal(salmentaZerrenda,new FileWriter("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml"));  
+      m.marshal(salmentaZerrenda,new FileWriter(xmlPath));  
       try {
                   SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
       
-                  Source schemaFile = new StreamSource(new File("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\erronkaticketbai.xsd"));
+                  Source schemaFile = new StreamSource(new File(xsdPath));
                   Schema schema = factory.newSchema(schemaFile);
       
                   Validator validator = schema.newValidator();
-                  Source source = new StreamSource("C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\xml\\Salmenta.xml");
+                  Source source = new StreamSource(xmlPath);
                   validator.validate(source);
                   System.out.println("ONDO BALIDATUTA DAGO");
               } catch (SAXException  ex) {
@@ -193,11 +201,17 @@ public class Ticketbaiproiektua {
 
         ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
         Xmlsortu(salmentak);
-        // TODO code application logic here
-        mySQLkonexioa nereKonexioa = new mySQLkonexioa();
-
-        nereKonexioa.obtener();
         
+        try{
+        mySQLkonexioa nereKonexioa = new mySQLkonexioa();
+        mySQLkonexioa.obtener();
+        }
+        catch(Exception ex)
+        {
+          ex.toString();
+        }
+
+
 
 }
 
