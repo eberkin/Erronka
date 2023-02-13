@@ -213,6 +213,7 @@ public class Ticketbaiproiektua {
         {
           ex.toString();
           System.out.println("mario burro");
+          ex.printStackTrace();
         }
 
 
