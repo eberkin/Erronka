@@ -194,6 +194,10 @@ public class Ticketbaiproiektua {
         ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
         Xmlsortu(salmentak);
         // TODO code application logic here
+        mySQLkonexioa nereKonexioa = new mySQLkonexioa();
+
+        nereKonexioa.obtener();
+        
 
 }
 
