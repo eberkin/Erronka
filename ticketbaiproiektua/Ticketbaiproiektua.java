@@ -212,6 +212,7 @@ public class Ticketbaiproiektua {
         catch(Exception ex)
         {
           ex.toString();
+          System.out.println("mario burro");
         }
 
 
