@@ -19,7 +19,7 @@ public class mySQLkonexioa {
        rs = sentencia.executeQuery(sql);
        while(rs.next()){
          int idTICKETA = rs.getInt("idTICKETA");
-         String izena = rs.getString("Izena");
+         String izena = rs.getString("izena");
        }
        conn.close();
       
