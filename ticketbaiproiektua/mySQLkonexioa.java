@@ -5,8 +5,8 @@ import java.sql.*;
 public class mySQLkonexioa {
    public static void obtener(){
    String url = "jdbc:mysql://10.23.29.61:3306/ticketbai";
-   String user = "root";
-   String password = "Lasaoipzazta1+";
+   String user = "EBER";
+   String password = "Admin123";
 
    try {
        Connection conn = DriverManager.getConnection(url, user, password);
