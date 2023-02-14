@@ -207,7 +207,7 @@ public class Ticketbaiproiektua {
         
         try{
         mySQLkonexioa nereKonexioa = new mySQLkonexioa();
-        mySQLkonexioa.obtener();
+        mySQLkonexioa.obtener(salmentak);
         }
         catch(Exception ex)
         {

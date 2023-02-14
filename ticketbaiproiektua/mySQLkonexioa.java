@@ -1,9 +1,10 @@
 package ticketbaiproiektua;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class mySQLkonexioa {
-   public static void obtener(){
+   public static void obtener(ArrayList<Pegatina> salmentak){
       String sql;
       ResultSet rs;
       Statement sentencia;
@@ -20,6 +21,7 @@ public class mySQLkonexioa {
        while(rs.next()){
          int idTICKETA = rs.getInt("idTICKETA");
          String izena = rs.getString("izena");
+         System.out.println(" ");
        }
        conn.close();
       
