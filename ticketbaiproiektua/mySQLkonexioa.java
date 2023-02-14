@@ -17,6 +17,7 @@ public class mySQLkonexioa {
        sentencia = conn.createStatement();
        sql = "SELECT idTICKETA, izena FROM ticketbai.ticketa";
        rs = sentencia.executeQuery(sql);
+       System.out.println(rs);
        conn.close();
    } catch (SQLException e) {
        System.out.println("Error al conectarse a la base de datos: " + e.getMessage());
