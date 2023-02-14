@@ -28,7 +28,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import org.xml.sax.SAXException;
-import java.sql.*;
+
 //import com.mysql.cj.xdevapi.Statement;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -214,6 +214,8 @@ public class Ticketbaiproiektua {
           ex.toString();
           System.out.println("mario burro");
           ex.printStackTrace();
+
+
         }
 
 
