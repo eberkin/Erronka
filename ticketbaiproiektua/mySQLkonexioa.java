@@ -19,6 +19,10 @@ public class mySQLkonexioa {
        rs = sentencia.executeQuery(sql);
        System.out.println(rs);
        conn.close();
+       while(rs.next()){
+         int idTICKETA = rs.getInt("id");
+         String izena = rs.getString("Izena");
+       }
    } catch (SQLException e) {
        System.out.println("Error al conectarse a la base de datos: " + e.getMessage());
    }
