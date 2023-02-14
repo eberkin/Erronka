@@ -18,7 +18,7 @@ public class mySQLkonexioa {
        sql = "SELECT idTICKETA, izena FROM ticketbai.ticketa";
        rs = sentencia.executeQuery(sql);
        while(rs.next()){
-         int idTICKETA = rs.getInt("id");
+         int idTICKETA = rs.getInt("idTICKETA");
          String izena = rs.getString("Izena");
        }
        conn.close();
