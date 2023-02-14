@@ -3,24 +3,18 @@ package ticketbaiproiektua;
 import java.sql.*;
 
 public class mySQLkonexioa {
-private static Connection cnx = null;
-public static Connection obtener() throws SQLException,  ClassNotFoundException {
-  if (cnx == null) {
-     try {
-        Class.forName("com.mysql.jdbc.Driver");
-        cnx = DriverManager.getConnection("jdbc:mysql://10.23.29.61:3306/ticketbai", "root", "Lasaoipzazta1+");
-     } catch (SQLException ex) {
-        throw new SQLException(ex);
-     } catch (ClassNotFoundException ex) {
-        throw new ClassCastException(ex.getMessage());
-     }
-  }
-  return cnx;
-  }
+   public static void obtener(){
+   String url = "jdbc:mysql://10.23.29.61:3306/ticketbai";
+   String user = "root";
+   String password = "Lasaoipzazta1+";
 
-public static void cerrar() throws SQLException {
-  if (cnx != null) {
-     cnx.close();
-  }
-  }
+   try {
+       Connection conn = DriverManager.getConnection(url, user, password);
+       // Haz aquí tus operaciones con la base de datos...
+       conn.close();
+   } catch (SQLException e) {
+       System.out.println("Error al conectarse a la base de datos: " + e.getMessage());
+   }
 }
+}
+
