@@ -73,10 +73,10 @@ public class Ticketbaiproiektua {
         ArrayList<Pegatina> salmentaGuztiak = new ArrayList<>();
 
         // hainbat karpetatako pegatinak irakurtzen dituen metodo bat deitu
-        ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia, "Harategia");
-        ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia, "Okindegia");
-        ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia, "Frutategia");
-        ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia, "Txarkutegia");
+        ArrayList <Pegatina> harategikoPegatinak = KarpetaIrakurri(pathHarategia, "2");
+        ArrayList <Pegatina> okindegikoPegatinak= KarpetaIrakurri(pathOkindegia, "4");
+        ArrayList <Pegatina> frutategikoPegatinak= KarpetaIrakurri(pathFrutategia, "3");
+        ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia, "1");
 
         // hainbat karpetatako pegatinak salmentaGuztiak ArrayList-era gehitu
         salmentaGuztiak.addAll(harategikoPegatinak);

@@ -106,6 +106,7 @@ public class Pegatina {
         String info = lerroa;
 
         this.id_denda=idDenda;
+        
 
         izena = info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
@@ -118,7 +119,7 @@ public class Pegatina {
     
         String pisua_p= info.substring(0, info.indexOf("$"));
         info = info.substring(info.indexOf("$")+1);
-    
+        int denda;
         String prezioTotala=info;
 
         //String ezberdinak sortzen dira eta substringekin ezartzen diogu zer den bakoitza
@@ -133,7 +134,7 @@ public class Pegatina {
             int id_ticketa;
             
             id_ticketa=Integer.parseInt(saltzaileID);
-            
+            denda=Integer.parseInt(id_denda);
             id_langilea=Integer.parseInt(saltzaileID);
             pisua_p= pisua_p.replace(",", ".");
             pisua = Double.parseDouble(pisua_p);

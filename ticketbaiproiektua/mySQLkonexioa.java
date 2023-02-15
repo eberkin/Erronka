@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class mySQLkonexioa {
    public static void obtener(ArrayList<Pegatina> salmentak){
       String sql;
-      ResultSet rs;
       Statement sentencia;
 
       String url = "jdbc:mysql://10.23.29.61:3306/ticketbai";
