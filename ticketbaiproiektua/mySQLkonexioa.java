@@ -15,8 +15,10 @@ public class mySQLkonexioa {
    try {
        Connection conn = DriverManager.getConnection(url, user, password);
        sentencia = conn.createStatement();
-       sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data,ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) VALUES ('arantxa', 2023, 2, 15, 594546, 0.5, 3.5, 1.75, 1, 1, 1);";
-       sentencia.executeUpdate(sql);
+       for (Pegatina p : salmentak) {
+        sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data, ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) " +"VALUES ('" +  + ")";
+        sentencia.executeUpdate(sql);
+    }
        conn.close();
        }
         catch (SQLException e) {
