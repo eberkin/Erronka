@@ -129,7 +129,7 @@ public class Pegatina {
         String urtea = pathFitxategia.substring(0, 4);
         String hilabetea = pathFitxategia.substring(4, 6);
         String eguna = pathFitxategia.substring(6, 8);
-        String ordua = pathFitxategia.substring(8, 10);
+        String ordua = pathFitxategia.substring(8, 14);
         String minutua = pathFitxategia.substring(10, 12);
         String segundua = pathFitxategia.substring(12, 14);
         //variable sortu konstruktorearen argumentuak variasble batean gordetzeko
