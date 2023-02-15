@@ -16,6 +16,7 @@
 								<xs:element name="urtea_data" type="xs:integer"/>
 								<xs:element name="hilabetea_data" type="xs:integer"/>
 								<xs:element name="eguna_data" type="xs:integer"/>
+								<xs:element name="ordua_data" type="xs:integer"/>
 								<xs:element name="pisua">
 									<xs:simpleType>
 											<xs:restriction base= "xs:decimal">
