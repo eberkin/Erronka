@@ -175,6 +175,7 @@ public class Ticketbaiproiektua {
               pg.setEtiketa(lerroa,izena, idDenda);
               // Objetua listan sartu
               datuakGorde.add(pg);
+              FitxategiaKopiatu(pathFitxategia);
           } 
 
       } catch (Exception e) {
@@ -195,6 +196,20 @@ public class Ticketbaiproiektua {
         
     } 
 
+    public static void FitxategiaKopiatu(String pathFitxategia){
+      String origen = pathFitxategia; // Ruta del archivo de origen
+        String destino = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\TiketakTemp"; // Ruta de la carpeta de destino
+      try {
+        Path archivoOrigen = Paths.get(origen);
+        Path archivoDestino = Paths.get(destino, archivoOrigen.getFileName().toString());
+        Files.copy(archivoOrigen, archivoDestino);
+    } catch (IOException e) {
+        System.out.println("Fitxategia kopiatzeko arazoak: " + e.getMessage());
+    }
+    }
+    public static void FitxategiaEzabatu() {
+      
+    }
 
     
     /**
@@ -218,7 +233,7 @@ public class Ticketbaiproiektua {
 
         }
 
-        
+
 
 
 
