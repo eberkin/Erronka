@@ -176,6 +176,7 @@ public class Ticketbaiproiektua {
               // Objetua listan sartu
               datuakGorde.add(pg);
               FitxategiaKopiatu(pathFitxategia);
+              FitxategiaEzabatu(pathFitxategia);
           } 
 
       } catch (Exception e) {
@@ -207,8 +208,14 @@ public class Ticketbaiproiektua {
         System.out.println("Fitxategia kopiatzeko arazoak: " + e.getMessage());
     }
     }
-    public static void FitxategiaEzabatu() {
-      
+    public static void FitxategiaEzabatu(String pathFitxategia) {
+      String rutaArchivo = pathFitxategia; // Ruta del archivo que se desea borrar
+        File archivo = new File(rutaArchivo);
+        if (archivo.delete()) {
+            
+        } else {
+            System.out.println("Ezin da fitxategia ezabatu");
+        }
     }
 
     
