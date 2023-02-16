@@ -211,11 +211,17 @@ public class Ticketbaiproiektua {
     public static void FitxategiaEzabatu(String pathFitxategia) {
       String rutaArchivo = pathFitxategia; // Ruta del archivo que se desea borrar
         File archivo = new File(rutaArchivo);
-        if (archivo.delete()) {
-            
-        } else {
-            System.out.println("Ezin da fitxategia ezabatu");
-        }
+        try {
+          if (archivo.delete()) {
+              
+          } else {
+              System.out.println("Ezin izan da fitxategia ezabatu");
+          }
+      } catch (SecurityException e) {
+          System.out.println("");
+      } catch (Exception e) {
+          System.out.println("Fitxategia ezabatzeko arazoak: " + e.getMessage());
+      }
     }
 
     
