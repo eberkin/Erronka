@@ -212,11 +212,13 @@ public class Ticketbaiproiektua {
         catch(Exception ex)
         {
           ex.toString();
-          System.out.println("mario burro");
+          System.out.println("Datu basera sartzeko arazoak...");
           ex.printStackTrace();
 
 
         }
+
+        
 
 
 
