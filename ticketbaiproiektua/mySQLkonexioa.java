@@ -16,7 +16,7 @@ public class mySQLkonexioa {
        Connection conn = DriverManager.getConnection(url, user, password);
        sentencia = conn.createStatement();
        for (Pegatina p : salmentak) {
-        sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data, ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) " +"VALUES ('" +  + ")";
+        sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data, ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) " +"VALUES ('" +  ")";
         sentencia.executeUpdate(sql);
     }
        conn.close();
