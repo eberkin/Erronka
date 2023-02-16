@@ -16,8 +16,8 @@ public class mySQLkonexioa {
        Connection conn = DriverManager.getConnection(url, user, password);
        sentencia = conn.createStatement();
        for (Pegatina p : salmentak) {
-         String sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data, ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) " +
-         "VALUES ('" + p.getIzena() + "', '" + p.getUrteaData() + "', '" + p.getHilabeteaData() + "', '" + p.getEgunaData() + "', '" + p.getOrduaData() + "', " + p.getPisua() + ", " + p.getPrezioaKiloko() + ", " + p.getPrezioTotala() + ", " + p.getIdLangilea() + ", " + p.getIdProduktuak() + ", " + p.getIdDenda() + ")";
+         sql = "INSERT INTO TICKETBAI.TICKETA (izena, urtea_data, hilabetea_data, eguna_data, ordua_data, pisua, prezioa_kiloko, prezio_totala, idLANGILEA, idPRODUKTUAK, idDENDA) " +
+         "VALUES ('" + p.getIzena() + "', '" + p.getUrteaData() + "', '" + p.getHilabeteaData() + "', '" + p.getEgunaData() + "', '" + p.getOrduaData() + "', " + p.getPisua() + ", " + p.getPrezioa_kiloko() + ", " + p.getPrezio_totala() + ", " + p.getId_langilea() + ", "  + p.getId_denda() + ")";
          sentencia.executeUpdate(sql);
     }
        conn.close();

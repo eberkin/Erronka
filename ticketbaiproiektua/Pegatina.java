@@ -57,6 +57,30 @@ public class Pegatina {
   public void setIzena(String izena) {
       this.izena = izena;
   }
+  public int getUrteaData() {
+    return urtea_data;
+}
+public void setUrteaData(int urtea_data) {
+    this.urtea_data = urtea_data;
+}
+public int getHilabeteaData() {
+    return hilabetea_data;
+}
+public void setHilabeteaData(int hilabetea_data) {
+    this.hilabetea_data = hilabetea_data;
+}
+public int getEgunaData() {
+    return eguna_data;
+}
+public void setEgunaData(int eguna_data) {
+    this.eguna_data = eguna_data;
+}
+public int getOrduaData() {
+    return ordua_data;
+}
+public void setOrduaData(int ordua_data) {
+    this.ordua_data = ordua_data;
+}
   
   public double getPisua() {
       return pisua;
@@ -87,7 +111,9 @@ public class Pegatina {
   }
   public void setId_langilea(Integer id_langilea) {
       this.id_langilea = id_langilea;
-  }
+}
+ 
+  
   //pegatina ondo
 
 
@@ -171,5 +197,7 @@ public class Pegatina {
       }
     
     }
+    
+    
 
 }
