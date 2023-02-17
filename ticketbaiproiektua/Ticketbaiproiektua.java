@@ -79,10 +79,10 @@ public class Ticketbaiproiektua {
         ArrayList <Pegatina> txarkutegikoPegatinak = KarpetaIrakurri(pathTxarkutegia, "1");
 
         // hainbat karpetatako pegatinak salmentaGuztiak ArrayList-era gehitu
-        salmentaGuztiak.addAll(harategikoPegatinak);
-        salmentaGuztiak.addAll(okindegikoPegatinak);
-        salmentaGuztiak.addAll(frutategikoPegatinak);
-        salmentaGuztiak.addAll(txarkutegikoPegatinak);
+        if(harategikoPegatinak!=null) salmentaGuztiak.addAll(harategikoPegatinak);
+        if(okindegikoPegatinak!=null)salmentaGuztiak.addAll(okindegikoPegatinak);
+        if(frutategikoPegatinak!=null)salmentaGuztiak.addAll(frutategikoPegatinak);
+        if(txarkutegikoPegatinak!=null)salmentaGuztiak.addAll(txarkutegikoPegatinak);
 
         // salmentaGuztiak ArrayList-a itzultzen da
         return salmentaGuztiak;
@@ -105,7 +105,7 @@ public class Ticketbaiproiektua {
                   Source source = new StreamSource(xmlPath);
                   validator.validate(source);
                   System.out.println("ONDO BALIDATUTA DAGO");
-              } catch (SAXException  ex) {
+    } catch (SAXException  ex) {
                   ex.printStackTrace();
                 }
 
