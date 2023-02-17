@@ -247,17 +247,21 @@ public class Ticketbaiproiektua {
      * @param args
      */
     public static void main(String[] args) {
-
+// salmentak ArrayLista sortu eta PegatinaGuztiakIrakurri funtzioa erabiliz bete
         ArrayList<Pegatina>  salmentak = PegatinaGuztiakIrakurri();
         Xmlsortu(salmentak);
         
         try{
+          // Xmlsortu funtzioa erabiliz XML fitxategia sortu
+
         mySQLkonexioa nereKonexioa = new mySQLkonexioa();
+         // mySQLkonexioa klaseko obtener metodoa erabiliz, salmentak datu basera gehitu
         mySQLkonexioa.obtener(salmentak);
+         // Backup metodoa erabiliz datu-basearen segurtasun kopia sortu
         Backup();
         }
         catch(Exception ex)
-        {
+        {// Sartzeko erroreak maneiatu
           ex.toString();
           System.out.println("Datu basera sartzeko arazoak...");
           ex.printStackTrace();
