@@ -1,231 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ticketak>
     <ticketa>
-        <izena>txuleta</izena>
+        <izena>limoiak</izena>
         <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20443</ordua_data>
-        <pisua>1.03</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>18.54</prezio_totala>
-        <id_denda>2</id_denda>
-        <id_langilea>7</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>binbo</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20525</ordua_data>
-        <pisua>0.55</pisua>
-        <prezioa_kiloko>16.0</prezioa_kiloko>
-        <prezio_totala>8.8</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>croasant</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20527</ordua_data>
-        <pisua>1.68</pisua>
+        <hilabetea_data>2</hilabetea_data>
+        <eguna_data>17</eguna_data>
+        <ordua_data>102647</ordua_data>
+        <pisua>5.0</pisua>
         <prezioa_kiloko>20.3</prezioa_kiloko>
-        <prezio_totala>34.1</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>donuts</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20529</ordua_data>
-        <pisua>1.82</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>32.76</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>ogia</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20531</ordua_data>
-        <pisua>0.94</pisua>
-        <prezioa_kiloko>20.3</prezioa_kiloko>
-        <prezio_totala>19.08</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>pastela</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20533</ordua_data>
-        <pisua>1.15</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>20.7</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>sandwich</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20535</ordua_data>
-        <pisua>0.29</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>5.22</prezio_totala>
-        <id_denda>4</id_denda>
-        <id_langilea>6</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>anana</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20607</ordua_data>
-        <pisua>0.12</pisua>
-        <prezioa_kiloko>8.0</prezioa_kiloko>
-        <prezio_totala>0.96</prezio_totala>
+        <prezio_totala>101.5</prezio_totala>
         <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>brokolia</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20609</ordua_data>
-        <pisua>1.23</pisua>
-        <prezioa_kiloko>5.2</prezioa_kiloko>
-        <prezio_totala>6.4</prezio_totala>
-        <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
+        <id_langilea>1</id_langilea>
     </ticketa>
     <ticketa>
         <izena>marrubia</izena>
         <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20610</ordua_data>
-        <pisua>1.28</pisua>
+        <hilabetea_data>2</hilabetea_data>
+        <eguna_data>17</eguna_data>
+        <ordua_data>102650</ordua_data>
+        <pisua>1.89</pisua>
         <prezioa_kiloko>16.0</prezioa_kiloko>
-        <prezio_totala>20.48</prezio_totala>
+        <prezio_totala>30.24</prezio_totala>
         <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
+        <id_langilea>1</id_langilea>
+    </ticketa>
+    <ticketa>
+        <izena>marrubia</izena>
+        <urtea_data>2023</urtea_data>
+        <hilabetea_data>2</hilabetea_data>
+        <eguna_data>17</eguna_data>
+        <ordua_data>102651</ordua_data>
+        <pisua>1.4</pisua>
+        <prezioa_kiloko>16.0</prezioa_kiloko>
+        <prezio_totala>22.4</prezio_totala>
+        <id_denda>3</id_denda>
+        <id_langilea>1</id_langilea>
     </ticketa>
     <ticketa>
         <izena>gereziak</izena>
         <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20612</ordua_data>
-        <pisua>0.41</pisua>
+        <hilabetea_data>2</hilabetea_data>
+        <eguna_data>17</eguna_data>
+        <ordua_data>102654</ordua_data>
+        <pisua>8.0</pisua>
         <prezioa_kiloko>12.0</prezioa_kiloko>
-        <prezio_totala>4.92</prezio_totala>
+        <prezio_totala>96.0</prezio_totala>
         <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>limoiak</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20613</ordua_data>
-        <pisua>1.0</pisua>
-        <prezioa_kiloko>20.3</prezioa_kiloko>
-        <prezio_totala>20.3</prezio_totala>
-        <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
+        <id_langilea>1</id_langilea>
     </ticketa>
     <ticketa>
         <izena>mahatsa</izena>
         <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20615</ordua_data>
-        <pisua>0.42</pisua>
+        <hilabetea_data>2</hilabetea_data>
+        <eguna_data>17</eguna_data>
+        <ordua_data>102658</ordua_data>
+        <pisua>11.0</pisua>
         <prezioa_kiloko>9.0</prezioa_kiloko>
-        <prezio_totala>3.78</prezio_totala>
+        <prezio_totala>99.0</prezio_totala>
         <id_denda>3</id_denda>
-        <id_langilea>5</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>bacon</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20711</ordua_data>
-        <pisua>0.65</pisua>
-        <prezioa_kiloko>11.0</prezioa_kiloko>
-        <prezio_totala>7.15</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>jamonyor</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20713</ordua_data>
-        <pisua>0.01</pisua>
-        <prezioa_kiloko>9.0</prezioa_kiloko>
-        <prezio_totala>0.09</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>odolkia</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20715</ordua_data>
-        <pisua>1.44</pisua>
-        <prezioa_kiloko>12.0</prezioa_kiloko>
-        <prezio_totala>17.28</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>salami</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20716</ordua_data>
-        <pisua>1.17</pisua>
-        <prezioa_kiloko>8.3</prezioa_kiloko>
-        <prezio_totala>9.71</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>txorizoa</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20717</ordua_data>
-        <pisua>1.51</pisua>
-        <prezioa_kiloko>9.0</prezioa_kiloko>
-        <prezio_totala>13.59</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>urdaiazpikoa</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20718</ordua_data>
-        <pisua>1.1</pisua>
-        <prezioa_kiloko>35.0</prezioa_kiloko>
-        <prezio_totala>38.5</prezio_totala>
-        <id_denda>1</id_denda>
-        <id_langilea>4</id_langilea>
+        <id_langilea>1</id_langilea>
     </ticketa>
 </ticketak>
