@@ -39,7 +39,10 @@ import java.text.SimpleDateFormat;
  * @author 34665
  */
 public class Ticketbaiproiektua {
-
+  public static String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
+  public static String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
+  public static String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
+  public static String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
   //EberKinki
   public static String xmlPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\xml\\salmenta.xml";
   public static String xsdPath = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\xml\\erronkaticketbai.xsd";
@@ -55,10 +58,7 @@ public class Ticketbaiproiektua {
     public static ArrayList <Pegatina> PegatinaGuztiakIrakurri(){
         // Path bakoitza sortzeko
         //path eber
-        String pathHarategia = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\harategia\\Tiketak";
-        String pathOkindegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\okindegia\\Tiketak";
-        String pathFrutategia= "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\frutategia\\Tiketak";
-        String pathTxarkutegia =  "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\txarkutegia\\Tiketak";
+       
         //path mario el crack
       //  String pathHarategia = "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\harategia\\Tiketak";
       //  String pathOkindegia =  "C:\\Users\\ikaltamirapaag1\\Documents\\ERRONKA-Ticketbai\\Erronka\\okindegia\\Tiketak";
@@ -175,9 +175,11 @@ public class Ticketbaiproiektua {
               pg.setEtiketa(lerroa,izena, idDenda);
               // Objetua listan sartu
               datuakGorde.add(pg);
-              FitxategiaKopiatu(pathFitxategia);
-              FitxategiaEzabatu(pathFitxategia);
+              
+              
           } 
+          fr.close();
+       
 
       } catch (Exception e) {
           System.out.println("Ezin izan da dokumentua topatu" + e);
@@ -199,7 +201,7 @@ public class Ticketbaiproiektua {
 
     public static void FitxategiaKopiatu(String pathFitxategia){
       String origen = pathFitxategia; // Ruta del archivo de origen
-        String destino = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\TiketakTemp"; // Ruta de la carpeta de destino
+        String destino = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\TicketakTemp"; // Ruta de la carpeta de destino
       try {
         Path archivoOrigen = Paths.get(origen);
         Path archivoDestino = Paths.get(destino, archivoOrigen.getFileName().toString());
@@ -212,13 +214,34 @@ public class Ticketbaiproiektua {
       String rutaArchivo = pathFitxategia; // Ruta del archivo que se desea borrar
         File archivo = new File(rutaArchivo);
         try {
-          archivo.delete();
+          
+          boolean res = archivo.delete();
+          System.out.println(res);
       } catch (Exception e) {
           System.out.println("Fitxategia ezabatzeko arazoak: " + e.getMessage());
+          System.out.println(e);
       }
     }
-
-    
+    public static void Backup(){
+      BackupKarpeta(pathHarategia);
+      BackupKarpeta(pathTxarkutegia );
+      BackupKarpeta(pathFrutategia);
+      BackupKarpeta(pathOkindegia);
+    }
+    public static void BackupKarpeta(String pathKarpeta){
+      File karpeta = new File(pathKarpeta);
+      String[]fitxategiZerrenda = karpeta.list();
+      if (fitxategiZerrenda==null||fitxategiZerrenda.length ==0){
+        System.out.println ("ez dago karpetarik");
+      
+      }
+    else{
+        for (int i =0; i<fitxategiZerrenda.length;i++){
+          FitxategiaKopiatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);
+          FitxategiaEzabatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);
+        }
+      }
+    }
     /**
      * @param args
      */
@@ -230,6 +253,7 @@ public class Ticketbaiproiektua {
         try{
         mySQLkonexioa nereKonexioa = new mySQLkonexioa();
         mySQLkonexioa.obtener(salmentak);
+        Backup();
         }
         catch(Exception ex)
         {
