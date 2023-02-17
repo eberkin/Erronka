@@ -219,7 +219,7 @@ public class Ticketbaiproiektua {
           System.out.println(res); // Se imprime el resultado de la operación (true si se ha borrado correctamente, false en caso contrario)
       } catch (Exception e) {
           System.out.println("Fitxategia ezabatzeko arazoak: " + e.getMessage()); // Si hay algún problema al borrar el archivo, se muestra un mensaje de error
-          System.out.println(e);
+          
       }
     }
     public static void Backup(){
