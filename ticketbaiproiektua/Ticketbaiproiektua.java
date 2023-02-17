@@ -203,11 +203,11 @@ public class Ticketbaiproiektua {
       String origen = pathFitxategia; // Ruta del archivo de origen
         String destino = "C:\\Users\\IKALTAMIRAPAAG1\\Desktop\\erronki\\Erronka\\TicketakTemp"; // Ruta de la carpeta de destino
       try {
-        Path archivoOrigen = Paths.get(origen);
-        Path archivoDestino = Paths.get(destino, archivoOrigen.getFileName().toString());
-        Files.copy(archivoOrigen, archivoDestino);
+        Path archivoOrigen = Paths.get(origen);// Obtiene la ruta del archivo origen como un objeto Path
+        Path archivoDestino = Paths.get(destino, archivoOrigen.getFileName().toString()); // Obtiene la ruta del archivo destino como un objeto Path
+        Files.copy(archivoOrigen, archivoDestino);// Copia el archivo de origen al archivo destino
     } catch (IOException e) {
-        System.out.println("Fitxategia kopiatzeko arazoak: " + e.getMessage());
+        System.out.println("Fitxategia kopiatzeko arazoak: " + e.getMessage());// Si hay algún problema al copiar el archivo, se muestra un mensaje de error
     }
     }
     public static void FitxategiaEzabatu(String pathFitxategia) {
