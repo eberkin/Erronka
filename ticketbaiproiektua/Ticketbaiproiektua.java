@@ -223,22 +223,23 @@ public class Ticketbaiproiektua {
       }
     }
     public static void Backup(){
+      /*errutaren karpeten path */
       BackupKarpeta(pathHarategia);
       BackupKarpeta(pathTxarkutegia );
       BackupKarpeta(pathFrutategia);
       BackupKarpeta(pathOkindegia);
     }
     public static void BackupKarpeta(String pathKarpeta){
-      File karpeta = new File(pathKarpeta);
-      String[]fitxategiZerrenda = karpeta.list();
+      File karpeta = new File(pathKarpeta);// Se crea un objeto File con la ruta de la carpeta de origen
+      String[]fitxategiZerrenda = karpeta.list(); // Se obtiene una lista con los nombres de los archivos de la carpeta
       if (fitxategiZerrenda==null||fitxategiZerrenda.length ==0){
-        System.out.println ("ez dago karpetarik");
+        System.out.println ("ez dago karpetarik"); // Si no hay archivos en la carpeta, se muestra un mensaje y no se hace nada más
       
       }
     else{
         for (int i =0; i<fitxategiZerrenda.length;i++){
-          FitxategiaKopiatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);
-          FitxategiaEzabatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);
+          FitxategiaKopiatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);// Se copia cada archivo de la carpeta a otra ubicación
+          FitxategiaEzabatu(pathKarpeta + "\\" + fitxategiZerrenda[i]);// Una vez copiado, se borra el archivo original
         }
       }
     }
