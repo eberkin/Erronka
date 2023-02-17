@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ticketak>
     <ticketa>
-        <izena>odolkia</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20433</ordua_data>
-        <pisua>1.98</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>35.64</prezio_totala>
-        <id_denda>2</id_denda>
-        <id_langilea>7</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>oilaskoa</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20436</ordua_data>
-        <pisua>1.1</pisua>
-        <prezioa_kiloko>20.3</prezioa_kiloko>
-        <prezio_totala>22.33</prezio_totala>
-        <id_denda>2</id_denda>
-        <id_langilea>7</id_langilea>
-    </ticketa>
-    <ticketa>
-        <izena>txorizoa</izena>
-        <urtea_data>2023</urtea_data>
-        <hilabetea_data>1</hilabetea_data>
-        <eguna_data>31</eguna_data>
-        <ordua_data>20438</ordua_data>
-        <pisua>1.22</pisua>
-        <prezioa_kiloko>18.0</prezioa_kiloko>
-        <prezio_totala>21.96</prezio_totala>
-        <id_denda>2</id_denda>
-        <id_langilea>7</id_langilea>
-    </ticketa>
-    <ticketa>
         <izena>txuleta</izena>
         <urtea_data>2023</urtea_data>
         <hilabetea_data>1</hilabetea_data>
