@@ -212,13 +212,13 @@ public class Ticketbaiproiektua {
     }
     public static void FitxategiaEzabatu(String pathFitxategia) {
       String rutaArchivo = pathFitxategia; // Ruta del archivo que se desea borrar
-        File archivo = new File(rutaArchivo);
+        File archivo = new File(rutaArchivo);// Se crea un objeto File con la ruta del archivo
         try {
           
-          boolean res = archivo.delete();
-          System.out.println(res);
+          boolean res = archivo.delete();// Se intenta borrar el archivo
+          System.out.println(res); // Se imprime el resultado de la operación (true si se ha borrado correctamente, false en caso contrario)
       } catch (Exception e) {
-          System.out.println("Fitxategia ezabatzeko arazoak: " + e.getMessage());
+          System.out.println("Fitxategia ezabatzeko arazoak: " + e.getMessage()); // Si hay algún problema al borrar el archivo, se muestra un mensaje de error
           System.out.println(e);
       }
     }
